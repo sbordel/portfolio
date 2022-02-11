@@ -116,6 +116,7 @@ PAGE HYPERLINK POSITIONING
   padding: 5px;
   z-index: 7;
 }
+/*
 #tooltip #tooltipText {
   display: block;
   visibility: hidden;
@@ -127,6 +128,20 @@ PAGE HYPERLINK POSITIONING
   font-size: 1vw;
   filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.75));
   z-index: 6;
+}*/
+#tooltip #tooltipText {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px; font-family: 'Times New';
+  font-size: 1vw;
+  background: #ffffffb9;
+  border: 1px black solid;
+  z-index: 6;
 }
 #tooltip:hover #tooltipText {
   visibility: visible;
@@ -134,103 +149,103 @@ PAGE HYPERLINK POSITIONING
 /*
 PAGE HYPERLINK POSITIONING
 */
-.presentation{
+.p1{ /*page 1*/
   top: 0;
   left: 0;
 }
-#s1{
+#sp1{
   top: 27%;
   left: 34%;
 }
-#s2{
+#sp2{
   top: 10%;
   left: 8%;
 }
-#fcs1{
+#fc1{
   left: 15%;
 }
-#fcs2{
+#fc2{
   left: 200px;
 }
-.reflection{
+.p2{ /*page 2*/
   top: 0;
   right: -30%;
 }
-#r1{
+#sp3{
   top: 11%;
   right: 5%;
 }
-#r2{
+#sp4{
   top: 19%;
 }
-#r3{
+#sp5{
   top: 45%;
   right: -11%;
 }
-#r4{
+#sp6{
   top: 31%;
   right: 11%;
 }
-#fcr2{
+#fc4{
   left: 50px;
 }
-#fcr3{
+#fc5{
   bottom: 10px;
   left: 200px;
 }
-#fcr4{
+#fc6{
   right: 90px;
   top: 220px;
 }
-.project{
+.p3{ /*page 3*/
   bottom: -55%;
   right: -30%;
 }
-#p1{
+#sp7{
   right: -20%;
 }
-#p2{
+#sp8{
   bottom: -14%;
   right: -10%;
 }
-#p3{
+#sp9{
   bottom: -25%;
   right: 13%;
 }
-#p4{
+#sp10{
   bottom: -0%;
   right: -23%;
 }
-#p5{
+#sp11{
   bottom: -30%;
   right: -45%;
 }
-#fcp2{
+#fc8{
   left: 50px;
   top: 160px;
 }
-.exercise{
+.p4{ /*page 4*/
   bottom: -55%;
   left: 0;
 }
-#e1{
+#sp12{
   bottom: -16%;
   left: 15%;
 }
-#e2{
+#sp13{
   left: 40%;
 }
-#e3{
+#sp14{
   bottom: -9%;
   left: 41%;
 }
-#e4{
+#sp15{
   left: 5%;
 }
-#fce3{
+#fc14{
   left: 250px;
   bottom: 5px;
 }
-#fce4{
+#fc15{
   left: 20px;
 }
