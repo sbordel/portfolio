@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  cursor: url(../assets/hand.png), default;
+  background-image: url('../assets/bg-3.png');
+  background-size: cover;
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'Patty Cake';
+  src: url(../fonts/pattycake-regular-webfont.ttf);
+}
+/* ***
+MAIN PAGE
+*** */
+.background-overlay {
+  background-image: url('../assets/background_pages.png');
+  background-position: 0 0 0 0;
+  background-size: 150%, cover;
+  overflow: scroll;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#folder-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-right: 3%;
+}
+#draggable {
+  width: 22vw;
+  margin: 30px;
+  filter: drop-shadow(0 0 15px rgb(166, 77, 255, 0.25));
+}
+#droppable {
+  width: 12vw;
+  padding-bottom: 15px;
+  margin: 30px;
+  filter: blur(0px) drop-shadow(0 0 30px rgb(166, 77, 255, 0.5));
+}
+#droppable:hover {
+  filter: blur(5px) drop-shadow(0 0 30px rgb(166, 77, 255, 0.5));
+}
+#arrow {
+  position: relative;
+  width: 12vw;
+  top: -10vw;
+  margin: 30px;
+}
+/* cursor */
+a {
+  cursor: url(../assets/hand.png), default;
+}
+/* ***
+SECONDARY PAGE
+*** */
+main img{
+  position: absolute;
+  width: 270px;
+  padding: 30px;
+  filter: blur(0px) drop-shadow(10px 15px 4px rgba(72, 92, 47, 0.75));
+}
+main img:hover{
+  mix-blend-mode: exclusion;
+  filter: drop-shadow(10px 15px 4px rgba(183, 163, 208, 0.75));
+}
+.presentation{
+  top: 0;
+  left: 0;
+}
+figure{
+  position: absolute;
+  margin: 25px;
+}
+figure a{
+  font-family: 'Patty Cake';
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+figure a:hover{
+  font-style: italic;
+}
+figcaption {
+  display: block;
+  position: relative;
+  margin: -50px;
+  z-index: 3;
+}
+h1{
+  font-family: 'Times New Roman';
+  font-weight: lighter;
+  font-size: 2vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+
+/*
+PAGE HYPERLINK POSITIONING
+*/
+#tooltip {
+  display: inline-block;
+}
+#tooltip img{
+  width: auto;
+  padding: 5px;
+  z-index: 7;
+}
+#tooltip #tooltipText {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  width: auto;
+  margin-left: 4vw;
+  margin-top: -20px;
+  font-family: 'Times New';
+  font-size: 1vw;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.75));
+  z-index: 6;
+}
+#tooltip:hover #tooltipText {
+  visibility: visible;
+}
+/*
+PAGE HYPERLINK POSITIONING
+*/
+.presentation{
+  top: 0;
+  left: 0;
+}
+#s1{
+  top: 27%;
+  left: 34%;
+}
+#s2{
+  top: 10%;
+  left: 8%;
+}
+#fcs1{
+  left: 15%;
+}
+#fcs2{
+  left: 200px;
+}
+.reflection{
+  top: 0;
+  right: -30%;
+}
+#r1{
+  top: 11%;
+  right: 5%;
+}
+#r2{
+  top: 19%;
+}
+#r3{
+  top: 45%;
+  right: -11%;
+}
+#r4{
+  top: 31%;
+  right: 11%;
+}
+#fcr2{
+  left: 50px;
+}
+#fcr3{
+  bottom: 10px;
+  left: 200px;
+}
+#fcr4{
+  right: 90px;
+  top: 220px;
+}
+.project{
+  bottom: -55%;
+  right: -30%;
+}
+#p1{
+  right: -20%;
+}
+#p2{
+  bottom: -14%;
+  right: -10%;
+}
+#p3{
+  bottom: -25%;
+  right: 13%;
+}
+#p4{
+  bottom: -0%;
+  right: -23%;
+}
+#p5{
+  bottom: -30%;
+  right: -45%;
+}
+#fcp2{
+  left: 50px;
+  top: 160px;
+}
+.exercise{
+  bottom: -55%;
+  left: 0;
+}
+#e1{
+  bottom: -16%;
+  left: 15%;
+}
+#e2{
+  left: 40%;
+}
+#e3{
+  bottom: -9%;
+  left: 41%;
+}
+#e4{
+  left: 5%;
+}
+#fce3{
+  left: 250px;
+  bottom: 5px;
+}
+#fce4{
+  left: 20px;
+}
