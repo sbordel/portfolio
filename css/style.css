@@ -147,11 +147,43 @@ PAGE HYPERLINK POSITIONING
   visibility: visible;
 }
 /*
+PAGE SUBINDEX ANIMATION
+*/
+.paperIndex {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 720px; 
+  height: 480px;
+  padding: 30px;
+  z-index: 5;
+  filter: blur(0px) drop-shadow(10px 15px 4px rgba(72, 92, 47, 0.75));
+  background: transparent url('/assets/paper-unfolding.png') 0 0 no-repeat;   /* Our sprite as the viewport background */
+  -webkit-animation: unfolding 2s steps(12) forwards;
+}
+
+.paperIndex:hover{
+    mix-blend-mode: exclusion;
+    filter: drop-shadow(10px 15px 4px rgba(183, 163, 208, 0.75));
+}
+
+/* sprite keyframe animation */
+@-webkit-keyframes unfolding {
+    from { background-position: 0; }
+    to { background-position: -8640px;}
+    100% {transform: scale(2);}
+};
+
+/*
 PAGE HYPERLINK POSITIONING
 */
 .p1{ /*page 1*/
   top: 0;
   left: 0;
+}
+#sp0{
+  top: 30%;
+  left: 34%;
 }
 #sp1{
   top: 27%;
