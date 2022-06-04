@@ -11,8 +11,14 @@ html {
   overflow: hidden;
 }
 @font-face {
-  font-family: 'Patty Cake';
-  src: url(../fonts/pattycake-regular-webfont.ttf);
+  font-family: 'Garamondt';
+  src: url(../fonts/Garamondt/Garamondt-Italic.woff);
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Garamondt';
+  src: url(../fonts/Garamondt/Garamondt-Regular.woff);
+  font-weight: normal;
 }
 /* ***
 MAIN PAGE
@@ -59,7 +65,7 @@ a {
   cursor: url(../assets/hand.png), default;
 }
 /* ***
-SECONDARY PAGE
+INDEX PAGE
 *** */
 main img{
   position: absolute;
@@ -75,36 +81,17 @@ main img:hover{
   top: 0;
   left: 0;
 }
-figure{
-  position: absolute;
-  margin: 25px;
-}
-figure a{
-  font-family: 'Patty Cake';
-  font-weight: bold;
-  text-decoration: none;
-  color: #000000;
-}
-figure a:hover{
-  font-style: italic;
-}
-figcaption {
-  display: block;
-  position: relative;
-  margin: -50px;
-  z-index: 3;
-}
 h1{
   font-family: 'Times New Roman';
   font-weight: lighter;
-  font-size: 2vw;
+  font-size: 20px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 10px;
+  z-index: 8;
 }
-
 /*
 PAGE HYPERLINK POSITIONING
 */
@@ -116,19 +103,6 @@ PAGE HYPERLINK POSITIONING
   padding: 5px;
   z-index: 7;
 }
-/*
-#tooltip #tooltipText {
-  display: block;
-  visibility: hidden;
-  position: absolute;
-  width: auto;
-  margin-left: 4vw;
-  margin-top: -20px;
-  font-family: 'Times New';
-  font-size: 1vw;
-  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.75));
-  z-index: 6;
-}*/
 #tooltip #tooltipText {
   display: block;
   visibility: hidden;
@@ -138,7 +112,7 @@ PAGE HYPERLINK POSITIONING
   left: 50%;
   transform: translate(-50%,-50%);
   padding: 40px; font-family: 'Times New';
-  font-size: 1vw;
+  font-size: 13px;
   background: #ffffffb9;
   border: 1px black solid;
   z-index: 6;
@@ -149,135 +123,126 @@ PAGE HYPERLINK POSITIONING
 /*
 PAGE SUBINDEX ANIMATION
 */
-.paperIndex {
+.paperDiv {
+  position: absolute;
+  width: 720px; 
+  height: 480px;
+  right: 15%;
+}
+#paperClick{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 350px;
+  height: 250px;
+  z-index: 6;
+  cursor: url('../assets/loupe_2.png'), auto;
+}
+#paperIndex {
   position: absolute;
   top:0;
   left:0;
   width: 720px; 
   height: 480px;
-  padding: 30px;
   z-index: 5;
   filter: blur(0px) drop-shadow(10px 15px 4px rgba(72, 92, 47, 0.75));
   background: transparent url('/assets/paper-unfolding.png') 0 0 no-repeat;   /* Our sprite as the viewport background */
+}
+/*
+#paperIndex:hover{
+  mix-blend-mode: exclusion;
+  filter: drop-shadow(10px 15px 4px rgba(183, 163, 208, 0.75));
+}*/
+.paperIndexAnim { 
   -webkit-animation: unfolding 2s steps(12) forwards;
 }
-
-.paperIndex:hover{
-    mix-blend-mode: exclusion;
-    filter: drop-shadow(10px 15px 4px rgba(183, 163, 208, 0.75));
-}
-
 /* sprite keyframe animation */
 @-webkit-keyframes unfolding {
     from { background-position: 0; }
     to { background-position: -8640px;}
     100% {transform: scale(2);}
 };
-
 /*
 PAGE HYPERLINK POSITIONING
 */
-.p1{ /*page 1*/
-  top: 0;
-  left: 0;
-}
-#sp0{
-  top: 30%;
-  left: 34%;
+.figure{
+  position: absolute;
+  margin: 25px;
+  z-index: 7;
 }
 #sp1{
-  top: 27%;
-  left: 34%;
+  bottom: 0;
+  right: -20%;
 }
 #sp2{
-  top: 10%;
-  left: 8%;
-}
-#fc1{
-  left: 15%;
-}
-#fc2{
-  left: 200px;
-}
-.p2{ /*page 2*/
-  top: 0;
-  right: -30%;
+  top:  15%;
+  right: -20%;
 }
 #sp3{
-  top: 11%;
+  bottom: -40%;
   right: 5%;
 }
 #sp4{
-  top: 19%;
-}
-#sp5{
-  top: 45%;
-  right: -11%;
-}
-#sp6{
-  top: 31%;
-  right: 11%;
-}
-#fc4{
-  left: 50px;
-}
-#fc5{
-  bottom: 10px;
-  left: 200px;
-}
-#fc6{
-  right: 90px;
-  top: 220px;
-}
-.p3{ /*page 3*/
-  bottom: -55%;
+  bottom: -50%;
   right: -30%;
 }
-#sp7{
-  right: -20%;
-}
-#sp8{
-  bottom: -14%;
-  right: -10%;
-}
-#sp9{
-  bottom: -25%;
-  right: 13%;
-}
-#sp10{
-  bottom: -0%;
-  right: -23%;
-}
-#sp11{
-  bottom: -30%;
-  right: -45%;
-}
-#fc8{
-  left: 50px;
-  top: 160px;
-}
-.p4{ /*page 4*/
-  bottom: -55%;
-  left: 0;
-}
-#sp12{
-  bottom: -16%;
-  left: 15%;
-}
-#sp13{
-  left: 40%;
-}
-#sp14{
-  bottom: -9%;
-  left: 41%;
-}
-#sp15{
+#sp5{
+  bottom: -15%;
   left: 5%;
 }
-#fc14{
-  left: 250px;
-  bottom: 5px;
+#sp6{
+  top: 5%;
+  left: 5%;
 }
-#fc15{
-  left: 20px;
+#sp7{
+  bottom: -50%;
+  left: 0%;
+}
+#sp8{
+  bottom: -34%;
+  right: 35%;
+}
+/* ***
+SS INDEX PAGE
+*** */
+.background-overlay-pi {
+  background-image: url('../assets/background_page_paper.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pageNav{
+  margin-top: 10vh;
+  text-align: center;
+}
+.pageNav h1{
+ font-family: 'Garamondt'; 
+ font-style: italic;
+ text-transform: uppercase;
+}
+.pageNav li{
+ font-family: 'Garamondt'; 
+ font-style: italic;
+ text-transform: lowercase;
+ font-size: 18px;
+ list-style-type: circle;
+}
+.pageNav span{
+  font-family: 'Times New Roman';
+  font-style: italic;
+  font-size: 16px;
+}
+footer {
+  position: fixed; 
+  width: 100%; 
+  margin: 10px;
+  padding-bottom: 0.5em; 
+  font-size: 15px;
+  bottom: 0; 
+  font-family: 'Times New Roman';
+}
+footer a{
+  font-style: italic;
 }

@@ -4,48 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sam's website!</title>
+  <script type="text/javascript" src="js/script.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-
     <!-- INDEX -->
       <main>
         <h1 id="tooltip">�<span id="tooltipText">Welcome to my website!<br/><br/>Select a piece of wrinkled paper to see my projects :--)</span></h1>
 
         <div id="index">
-          <nav class="page">
-          <div class="paperIndex" id="sp0"></div>
+          <nav>
+          <!-- sunday sites -->
+          <figure class="paperDiv"><div id="paperClick" onclick="paperGif()"></div><div id="paperIndex"></div></figure>
           <!-- ?? -->
-          <figure class="p1" id="sp1"><a href="#"><figcaption id="fc1">??? →⇨⇩</figcaption><img src="assets/pages/page_01.png" alt="page 1"></a></figure>
+          <a href="#"><img class="figure" id="sp1" src="assets/pages/page_01.png" alt="page 1"></a>
           <!-- ?? -->
-          <figure class="p1" id="sp2"><a href="#"><figcaption id="fc2">↙⇦← ???</figcaption><img src="assets/pages/page_02.png" alt="page 2"></a></figure>
+          <a href="#"><img class="figure" id="sp2" src="assets/pages/page_02.png" alt="page 2"></a>
           <!-- ?? -->
-          <figure class="p2" id="sp3"><a href="#"><figcaption id="fc3">???  →⇨↘</figcaption><img src="assets/pages/page_03.png" alt="page 3"></a></figure>
+          <a href="#"><img class="figure" id="sp3" src="assets/pages/page_03.png" alt="page 3"></a>
           <!-- ?? -->
-          <figure class="p2" id="sp4"><a href="#"><figcaption id="fc4">???  ↘</figcaption><img src="assets/pages/page_04.png" alt="page 4"></a></figure>
+          <a href="#"><img class="figure" id="sp4" src="assets/pages/page_04.png" alt="page 4"></a>
           <!-- ?? -->
-          <figure class="p2" id="sp5"><a href="#"><figcaption id="fc5">↙⇦←  ???</figcaption><img src="assets/pages/page_05.png" alt="page 5"></a></figure>
+          <a href="#"><img class="figure" id="sp5" src="assets/pages/page_12.png" alt="page 5"></a>
           <!-- ?? -->
-          <figure class="p2" id="sp6"><a href="#"><figcaption id="fc6">???  →⇨↗</figcaption><img src="assets/pages/page_06.png" alt="page 6"></a></figure>
+          <a href="#"><img class="figure" id="sp6" src="assets/pages/page_06.png" alt="page 6"></a>
           <!-- ?? -->
-          <figure  class="p3" id="sp7"><a href="#"><figcaption id="fc7">???→⇨↘</figcaption><img src="assets/pages/page_07.png" alt="page 7"></a></figure>
+          <a href="#"><img class="figure" id="sp7" src="assets/pages/page_07.png" alt="page 7"></a>
           <!-- ?? -->
-          <figure class="p3" id="sp8"><a href="#"><figcaption id="fc8">??? →⇨⇪</figcaption><img src="assets/pages/page_08.png" alt="page 8"></a></figure>
-          <!-- ?? -->
-          <figure class="p3" id="sp9"><a href="#"><figcaption id="fc9">???⇩</figcaption><img src="assets/pages/page_09.png" alt="page 9"></a></figure>
-          <!-- ?? -->
-          <figure class="p3" id="sp10"><a href="#"><figcaption id="fc10">??? →⇨⇩</figcaption><img src="assets/pages/page_10.png" alt="page 10"></a></figure>
-          <!-- ?? -->
-          <figure class="p3" id="sp11"><a href="#"><figcaption id="fc11">???.⇩</figcaption><img src="assets/pages/page_11.png" alt="page 11"></a></figure>
-          <!-- ?? -->
-          <figure class="p4" id="sp12"><a href="#"><figcaption id="fc12">??? →⇨↘</figcaption><img src="assets/pages/page_12.png" alt="page 12"></a></figure>
-          <!-- ?? -->
-          <figure class="p4" id="sp13"><a href="#"><figcaption id="fc13">??? ↘</figcaption><img src="assets/pages/page_13.png" alt="page 13"></a></figure>
-          <!-- ?? -->
-          <figure class="p4" id="sp14"><a href="#"><figcaption id="fc14">↙⇦← ???</figcaption><img src="assets/pages/page_14.png" alt="page 14"></a></figure>
-          <!-- ?? -->
-          <figure class="p4" id="sp15"><a href="#"><figcaption id="fc15">??? →⇨↘</figcaption><img src="assets/pages/page_15.png" alt="page 15"></a></figure>
+          <a href="#"><img class="figure" id="sp8" src="assets/pages/page_08.png" alt="page 8"></a>
+          <!-- 
+          <a href="#"><img class="p3" id="sp9" src="assets/pages/page_09.png" alt="page 9"></a>
+          <a href="#"><img class="p3" id="sp10" src="assets/pages/page_10.png" alt="page 10"></a>
+          <a href="#"><img class="p3" id="sp11" src="assets/pages/page_11.png" alt="page 11"></a>
+          <a href="#"><img class="p4" id="sp12" src="assets/pages/page_05.png" alt="page 12"></a>
+          <a href="#"><img class="p4" id="sp13" src="assets/pages/page_13.png" alt="page 13"></a>
+          <a href="#"><img class="p4" id="sp14" src="assets/pages/page_14.png" alt="page 14"></a>
+          <a href="#"><img class="p4" id="sp15" src="assets/pages/page_15.png" alt="page 15"></a>
+          -->
         </nav>
       </div>
 
@@ -54,5 +50,15 @@
       <footer>
       </footer>
 </body>
-
+<script>
+function paperGif() {
+  const paper = document.getElementById("paperIndex");
+  paper.classList.add('paperIndexAnim');
+  
+  paper.addEventListener("webkitAnimationEnd", loadpageIndex);
+  function loadpageIndex(){
+    window.location.href = "paperindex.html";
+  };
+}
+</script>
 </html>
