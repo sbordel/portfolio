@@ -96,6 +96,12 @@ h1{
 PAGE HYPERLINK POSITIONING
 */
 #tooltip {
+  font-family: 'Times New Roman';
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  z-index: 8;
   display: inline-block;
 }
 #tooltip img{
@@ -119,6 +125,12 @@ PAGE HYPERLINK POSITIONING
 }
 #tooltip:hover #tooltipText {
   visibility: visible;
+}
+.indexPage span {
+  top:0;
+  margin-left: 200px;
+  font-size: 15px;
+  padding: 5px;
 }
 /*
 PAGE SUBINDEX ANIMATION
@@ -213,36 +225,99 @@ SS INDEX PAGE
   background-size: cover;
   background-repeat: no-repeat;
 }
-.pageNav{
+#back {
+  position: absolute;
+  top:0;
+  margin: 15px;
+  font-size: 15px;
+  padding: 5px;
+  text-decoration: none;
+}
+#back:hover {
+  background: white;    
+}
+
+.pageNav {
   margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
   text-align: center;
 }
-.pageNav h1{
- font-family: 'Garamondt'; 
- font-style: italic;
- text-transform: uppercase;
-}
-.pageNav li{
- font-family: 'Garamondt'; 
- font-style: italic;
- text-transform: lowercase;
- font-size: 18px;
- list-style-type: circle;
-}
-.pageNav span{
+
+.pageNav h1 {
   font-family: 'Times New Roman';
   font-style: italic;
-  font-size: 16px;
+  text-transform: lowercase;
+  text-align: center;
+  margin-bottom:20px;
 }
+
+.pageNav li {
+  font-family: 'Times New Roman';
+  font-style: italic;
+  text-transform: lowercase;
+  font-size: 18px;
+  list-style-type: none;
+  text-align: center;
+}
+
 footer {
-  position: fixed; 
-  width: 100%; 
+  position: fixed;
+  width: 100%;
   margin: 10px;
-  padding-bottom: 0.5em; 
+  margin-left: 15px;
+  padding-bottom: 0.5em;
   font-size: 15px;
-  bottom: 0; 
+  bottom: 0;
   font-family: 'Times New Roman';
 }
-footer a{
+
+footer a {
   font-style: italic;
+}
+
+.paperPage a {
+  color: black;
+}
+.pageTitle{
+  width: auto;
+  padding: 30px;
+  border: 1px solid black;
+  background-color: #e0bda4b0;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.pageElem {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: transparent;
+  text-align: justify;
+  transform: skew(20deg, 10deg);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px #c8d2dc;
+}
+.pageElem:hover {
+  background-color: white;
+  transform: skew(0deg, 10deg);
+}
+
+.pageElem a {
+  text-decoration: none;
+}
+
+.marqueeBox {
+  position: absolute;
+  width: 30vw;
+  height: 70vh;
+  margin-top: 20vh;
+}
+
+marquee font{
+  color: blue;
 }
