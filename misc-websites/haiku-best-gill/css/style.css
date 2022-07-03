@@ -1,0 +1,48 @@
+/*********************************************
+**********************************************/
+
+html{
+  background-image: url('../assets/images/axolotl1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Times New Roman';
+  font-size: 1.8rem;
+  user-select: none;
+  width: 100%;
+}
+
+.modal {
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 20vw;
+  width: 35vw;
+  color: #000000;
+  text-align: center;
+  background-image: url('../assets/images/axolotl2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px inset #a0a0a0;
+  z-index: 1;
+}
+
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
+p:hover{
+  font-style: italic;
+ }
+
+#credits{
+  display: none;
+}
