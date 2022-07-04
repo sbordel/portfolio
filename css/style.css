@@ -100,7 +100,10 @@ PAGE HYPERLINK POSITIONING
   font-weight: lighter;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 10px;
+  margin: 15px;
+  top:0;
+  font-size: 15px;
+  padding: 5px;
   z-index: 8;
   display: inline-block;
 }
@@ -125,12 +128,6 @@ PAGE HYPERLINK POSITIONING
 }
 #tooltip:hover #tooltipText {
   visibility: visible;
-}
-.indexPage span {
-  top:0;
-  margin-left: 200px;
-  font-size: 15px;
-  padding: 5px;
 }
 /*
 PAGE SUBINDEX ANIMATION
