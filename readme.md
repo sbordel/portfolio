@@ -3,10 +3,9 @@
 
 ### web experiments 
 
-[eWEB01: PHP](https://hybrid.concordia.ca/s_bordel/exercises/exercise_03/exercise_e3.php)
+- [eWEB01: PHP](https://hybrid.concordia.ca/s_bordel/exercises/exercise_03/exercise_e3.php)
 
 ### [sunday sites](https://sbordel.github.io/ss/paperindex.html)
-[SS20: Building a Village](https://sbordel.github.io/ss/#)
-[SS21: Ephemerality](https://sbordel.github.io/ss/#)
+- [SS20: Building a Village](https://sbordel.github.io/ss/#)
+- [SS21: Ephemerality](https://sbordel.github.io/ss/sunday-sites/site02.html)
 
-(...)
