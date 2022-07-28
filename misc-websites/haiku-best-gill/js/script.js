@@ -7,14 +7,20 @@
     `strolling in the sand`,
     `earthworm based diet`,
     `a synthetic feel`,
-    `xanthophores sheen`
+    `xanthophores sheen`,
+    `neotenic friend`,
+    `magic limb regrowth`,
+    `gravel as a treat`,
+    `a buoyant mammal`,
+    `dog-head Aztec god`
     ],
     sevenSyllables: [
     `the cutest of axolotls`,
     `with lidless googly black eyes`,
     `silly walking pet fishy`,
     `its small vestigial teeth`,
-    `head crowned with external gills`
+    `head crowned with external gills`,
+    `organ regenerator`
     ]
    };
 
@@ -81,7 +87,7 @@ function setupLines() {
     if (element === line1 || element === line3) {
       // if element is line1 or line3, use 5 syllables
       element.innerText = random(haikuLines.fiveSyllables);
-    }
+    } 
     else {
       // if element is line2, use 7
       element.innerText = random(haikuLines.sevenSyllables);
