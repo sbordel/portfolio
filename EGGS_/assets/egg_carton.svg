@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 2" viewBox="0 0 1407 599">
+  <defs>
+    <linearGradient id="a" x1="-59.3" x2="144.9" y1="960.2" y2="960.2" gradientTransform="translate(1056 -529)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4f38e"/>
+      <stop offset=".4" stop-color="#f8f8bf"/>
+      <stop offset=".9" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="b" x2="144.9" y1="696.5" y2="696.5" gradientTransform="translate(792 -265)"/>
+    <linearGradient xlink:href="#a" id="c" x2="144.9" y1="432.4" y2="432.4" gradientTransform="translate(528 -1)"/>
+    <linearGradient xlink:href="#a" id="d" x2="144.9" y1="167.8" y2="167.8" gradientTransform="translate(264 264)"/>
+    <linearGradient xlink:href="#a" id="e" x1="203.3" x2="407.4" y1="167.8" y2="167.8" gradientTransform="translate(1 1)"/>
+    <linearGradient xlink:href="#a" id="f" x1="203.3" x2="407.4" y1="432.4" y2="432.4" gradientTransform="translate(266 -264)"/>
+    <linearGradient xlink:href="#a" id="g" x1="203.3" x2="407.4" gradientTransform="translate(793 -791)"/>
+    <linearGradient xlink:href="#a" id="h" x1="203.3" x2="407.4" y1="696.5" y2="696.5" gradientTransform="translate(530 -528)"/>
+  </defs>
+  <g data-name="egg cart">
+    <path d="M1269 1H138v94h-1C62 95 1 156 1 231v137c0 75 61 136 136 136h1v94h1131v-94h1c75 0 136-61 136-136V231c0-75-61-136-136-136h-1V1Z" style="fill:#fff;stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"/>
+    <g data-name="row 2">
+      <path d="M997 329h204v204H997z" style="fill:url(#a);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 1099 431)"/>
+      <path d="M733 329h204v204H733z" style="fill:url(#b);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 835 431)"/>
+      <path d="M469 329h204v204H469z" style="fill:url(#c);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 571 431)"/>
+      <path d="M204 329h204v204H204z" style="fill:url(#d);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 306 431)"/>
+    </g>
+    <g data-name="row 1">
+      <path d="M204 67h204v204H204z" style="fill:url(#e);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 306 169)"/>
+      <path d="M469 67h204v204H469z" style="stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px;fill:url(#f)" transform="rotate(-90 571 169)"/>
+      <path d="M997 67h204v204H997z" style="fill:url(#g);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 1099 169)"/>
+      <path d="M733 67h204v204H733z" style="fill:url(#h);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px" transform="rotate(-90 835 169)"/>
+    </g>
+  </g>
+</svg>
