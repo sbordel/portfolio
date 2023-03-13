@@ -1,0 +1,16 @@
+* {
+
+}
+body {
+background-color: #b0a983;
+}
+
+.index{
+ position: absolute;
+ right: 0;
+ top: 0;
+ height: 100vh;
+ width: 20vw;
+ background-color: #f5f4b0;
+ border: 1px black solid;
+}
