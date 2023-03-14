@@ -31,6 +31,18 @@ html, body {
     width: 90%;
     vertical-align: middle;
   }
+  .egg-index{
+    position: absolute;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; 
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .eggimg{
+    width: 10%;
+  }
   .egg-zoom{
     position: fixed;
     bottom: 0; 
