@@ -1,53 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sam's eggs</title>
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
 </head>
-<style>
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background-color: #b0a983;
-  }
-  .carton {
-    width: 75vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center; 
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  svg {
-    width: 90%;
-    vertical-align: middle;
-  }
-  .index {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #f4f390;
-    width: 25vw;
-    height: 100vh;
-    font-family:'Courier New', Courier, monospace
-  }
-  p {
-    padding: 20px;
-  }
-</style>
-
 <body>
   <div class="carton">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 2"
@@ -98,15 +57,48 @@
         </g>
       </g>
     </svg>
+    <div class="egg-zoom"><span id="color"></span> <p id="code">O-BR34KF457</p></div>
   </div>
   <div class="index">
-    <p>
-      adding some text
-      <br>adding some text
-      <br>adding some text
-      <br>adding some text
-    </p>
+    <div class="box" id="b1">
+      <span>├──</span> <h2>BREAKFAST</h2>
+      <br><span>│   ├──</span> <a>egg<input onclick="change()" type="button" value="▸" id="btn-a"></input></a>
+      <span id="breakfast-a">
+          <br><span>│   │   ├──</span> <a>benedict</a>
+          <br><span>│   │   ├──</span> <a>poached egg</a>
+          <br><span>│   │   ├──</span> <a>frittata</a>
+          <br><span>│   │   └──</span> <a>omelet</a>
+      </span>
+      <br><span>│   ├──</span> <a>toast<input onclick="change()" type="button" value="▸" id="btn-b"></input></a>
+      <br><span>│   ├──</span> <a>pancakes<input onclick="change()" type="button" value="▸" id="btn-c"></input></a> 
+      <br><span>│   ├──</span> <a>burrito<input onclick="change()" type="button" value="▸" id="btn-d"></input></a>  
+      <br><span>│   ├──</span> <a>quiche<input onclick="change()" type="button" value="▸" id="btn-e"></input></a>  
+      <br><span>│   ├──</span> <a>waffles<input onclick="change()" type="button" value="▸" id="btn-f"></input></a>  
+      <br><span>│   └──</span> <a>oats<input onclick="change()" type="button" value="▸" id="btn-g"></input></a>  
+    </div>
+
+  <div class="box" id="b2">
+      <h2>POACHED EGG</h2>
+     <ul>
+      <li>egg</li>
+      <li>water</li>
+      <li>vinegar</li>
+     </ul>
+     <ol>
+      <li>boil water.</li>
+      <li>add vinegar & egg.</li>
+      <li>cook for 3 min.</li>
+      <li>serve and eat.</li>
+     </ol>
+  </div>
   </div>
 </body>
-
+<script>
+ function change() {
+    var elem = document.getElementById("btn-a");
+    var list = document.getElementById("breakfast-a")
+    if (elem.value=="▾") elem.value = "▸", list.style.display = 'none';
+    else elem.value = "▾", list.style.display = 'inline';
+}
+</script>
 </html>
