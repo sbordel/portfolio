@@ -39,9 +39,15 @@ html, body {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 51vw;
   }
   .eggimg{
-    width: 10%;
+    width: 9.3vw;
+    margin: 3.3%;
+  } 
+  .eggimg:hover{
+    filter: drop-shadow(0 0 0.75rem #f6f479);
   }
   .egg-zoom{
     position: fixed;
@@ -49,14 +55,14 @@ html, body {
     left: 0;
     margin-left: 20px;
   }
-  #color{
+  .egg-zoom #color{
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 5px outset #bdb7b0;
-    background-color: #bdb7b0;
+    border: 5px outset #876b5e;
+    background-color: #876b5e;
   }
-  #code{
+  .egg-zoom #code{
     display: inline-flex;
     margin-left: 10px;
     font-family: 'Lincoln/MITRE L/M 5x7';

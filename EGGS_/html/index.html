@@ -58,14 +58,14 @@
       </g>
     </svg>
     <div class="egg-index">
-      <img class="eggimg" id="e-1" src="assets/egg1.png" alt="">
-      <img class="eggimg" id="e-2" src="assets/egg2.png" alt="">
-      <img class="eggimg" id="e-3" src="assets/egg3.png" alt="">
-      <img class="eggimg" id="e-4" src="assets/egg4.png" alt="">
-      <img class="eggimg" id="e-5" src="assets/egg5.png" alt="">
-      <img class="eggimg" id="e-6" src="assets/egg6.png" alt="">
-      <img class="eggimg" id="e-6" src="assets/egg7.png" alt="">
-      <img class="eggimg" id="e-6" src="assets/egg8.png" alt="">
+      <img class="eggimg" id="e-1" src="assets/egg1.png" title="" alt="first egg">
+      <img onclick="changeIt(this)"  class="eggimg" id="e-2" src="assets/egg2.png" title="" alt="">
+      <img class="eggimg" id="e-3" src="assets/egg3.png" title="" alt="">
+      <img class="eggimg" id="e-4" src="assets/egg4.png" title="" alt="">
+      <img class="eggimg" id="e-5" src="assets/egg5.png" title="" alt="">
+      <img class="eggimg" id="e-6" src="assets/egg6.png" title="" alt="">
+      <img class="eggimg" id="e-6" src="assets/egg7.png" title="" alt="">
+      <img class="eggimg" id="e-6" src="assets/egg8.png" title="" alt="">
     </div>
   </div>
     <div class="egg-zoom"><span id="color"></span> <p id="code">O-BR34KF457</p></div>
@@ -86,6 +86,16 @@
       <br><span>│   ├──</span> <a>waffles<input onclick="change()" type="button" value="▸" id="btn-f"></input></a>  
       <br><span>│   └──</span> <a>oats<input onclick="change()" type="button" value="▸" id="btn-g"></input></a>  
     </div>
+<!-- 
+breakfast  O-BR34KF457
+main 1-M41N
+sides 2-S1D32
+salads 3-S4l4D2
+dessert 4-D3S53R7
+quick snax 5-KW1CK5N4X
+baked goods 6-8K3D9OOD2
+drinkables 7-DR1NK48l32
+-->
 
   <div class="box" id="b2">
       <h2>POACHED EGG</h2>
@@ -104,11 +114,29 @@
   </div>
 </body>
 <script>
+const eggImg = new Image();
+
+for (let i = 0; i < eggImg.length; i++) {
+  eggImg.src = "assets/egg" + [i] + "-anim.gif";
+  // console.log(eggImg[i].src);
+}
+// eggImg.src = "assets/egg" + [2] + "-anim.gif";
+// findEgg();
+
+// function findEgg(){
+//   console.log(eggImg.src);
+// };
+
+
  function change() {
     var elem = document.getElementById("btn-a");
     var list = document.getElementById("breakfast-a")
     if (elem.value=="▾") elem.value = "▸", list.style.display = 'none';
     else elem.value = "▾", list.style.display = 'inline';
 }
+// function changeIt(img) {
+// var name = img.src;
+// alert(name);
+// }
 </script>
 </html>
