@@ -45,6 +45,7 @@ html, body {
   .eggimg{
     width: 9.3vw;
     margin: 3.3%;
+    border: 0.5px red solid;
   } 
   .eggimg:hover{
     filter: drop-shadow(0 0 0.75rem #f6f479);
