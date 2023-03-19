@@ -60,6 +60,7 @@ html, body {
     display: inline-block;
     width: 50px;
     height: 50px;
+    margin-left: 10px;
     border: 5px outset #876b5e;
     background-color: #876b5e;
   }
@@ -78,6 +79,10 @@ html, body {
     width: 25vw;
     height: 100vh;
     font-family:'Courier New', Courier, monospace
+  }
+  .text-box{
+    height: 100%;
+    overflow: scroll;
   }
   #b1, #b2{
     box-sizing: border-box;

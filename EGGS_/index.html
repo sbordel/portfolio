@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>sam's eggs</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
   <div class="carton">
@@ -58,19 +58,20 @@
       </g>
     </svg>
     <div class="egg-index">
-      <img onclick="egg(this.id)" class="eggimg" id="1" src="assets/egg1.png" title="" alt="first egg">
-      <img onclick="egg(this.id)" class="eggimg" id="2" src="assets/egg2.png" title="" alt="">
-      <img class="eggimg" id="3" src="assets/egg3.png" title="" alt="">
-      <img class="eggimg" id="4" src="assets/egg4.png" title="" alt="">
-      <img class="eggimg" id="5" src="assets/egg5.png" title="" alt="">
-      <img class="eggimg" id="6" src="assets/egg6.png" title="" alt="">
-      <img class="eggimg" id="6" src="assets/egg7.png" title="" alt="">
-      <img class="eggimg" id="6" src="assets/egg8.png" title="" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="1" src="assets/egg1.png" title="O-BR34KF457" alt="first egg">
+      <img onclick="egg(this.id)" class="eggimg" id="2" src="assets/egg2.png" title="1-M41N" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="3" src="assets/egg3.png" title="2-S1D32" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="4" src="assets/egg4.png" title="3-S4l4D2" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="5" src="assets/egg5.png" title="4-D3S53R7" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="6" src="assets/egg6.png" title="5-KW1CK5N4X" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="7" src="assets/egg7.png" title="6-8K3D9OOD2" alt="">
+      <img onclick="egg(this.id)" class="eggimg" id="8" src="assets/egg8.png" title="7-DR1NK48l32" alt="">
     </div>
   </div>
-    <div class="egg-zoom"><span id="color"></span> <p id="code">O-BR34KF457</p></div>
+    <div class="egg-zoom"><span id="color"></span> <p id="code"></p></div>
   <div class="index">
     <div class="box" id="b1">
+      <div class="text-box">
       <span>├──</span> <h2>BREAKFAST</h2>
       <br><span>│   ├──</span> <a>egg<input onclick="change()" type="button" value="▸" id="btn-a"></input></a>
       <span id="breakfast-a">
@@ -86,18 +87,9 @@
       <br><span>│   ├──</span> <a>waffles<input onclick="change()" type="button" value="▸" id="btn-f"></input></a>  
       <br><span>│   └──</span> <a>oats<input onclick="change()" type="button" value="▸" id="btn-g"></input></a>  
     </div>
-<!-- 
-breakfast  O-BR34KF457
-main 1-M41N
-sides 2-S1D32
-salads 3-S4l4D2
-dessert 4-D3S53R7
-quick snax 5-KW1CK5N4X
-baked goods 6-8K3D9OOD2
-drinkables 7-DR1NK48l32
--->
-
+  </div>
   <div class="box" id="b2">
+    <div class="text-box">
       <h2>POACHED EGG</h2>
      <ul>
       <li>egg</li>
@@ -110,32 +102,8 @@ drinkables 7-DR1NK48l32
       <li>cook for 3 min.</li>
       <li>serve and eat.</li>
      </ol>
+    </div>
   </div>
   </div>
 </body>
-<script>
-  function egg(eggid){
-
-var eggid;
-var eggArray = [];
-for (i = 0; i < 11; i++) {
-
-  eggArray[i] = new Image();
-  eggArray[i].src = 'assets/egg' + eggid + '.gif';
-}
-document.getElementById(eggid).src = 'assets/egg' + eggid + '.gif';
-
-window.setTimeout(function(){
-  document.getElementById(eggid).src = 'assets/egg' + eggid + '.png';
-  }, 6000);
-}
-
- function change() {
-    var elem = document.getElementById("btn-a");
-    var list = document.getElementById("breakfast-a")
-    if (elem.value=="▾") elem.value = "▸", list.style.display = 'none';
-    else elem.value = "▾", list.style.display = 'inline';
-}
-
-</script>
 </html>
