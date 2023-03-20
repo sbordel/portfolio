@@ -1,0 +1,72 @@
+{
+    "description": "List of recipes categoried my meal type",
+    "source": "",
+    "recipe_categories": {
+        "category-num": "0",
+        "breakfast": {
+            "name": "Fennel Shakshuka",
+            "ingredients": [
+                {
+                    "quantity": "4",
+                    "name": "eggs",
+                },
+                {
+                    "quantity": "10-12",
+                    "name": "cherry tomatoes",
+                    "type": "quartered"
+                },
+                {
+                    "quantity": "½",
+                    "name": "fennel",
+                    "type": "finely sliced"
+                },
+                {
+                    "quantity": "1",
+                    "name": "stalk lemongrass",
+                    "type": "bashed and finely chopped"
+                },
+                {
+                    "quantity": "5-7",
+                    "name": "anchovy fillets",
+                },
+                {
+                    "quantity": "1",
+                    "name": "sprig rosemary",
+                    "type": "stalk removed and leaves finely chopped"
+                },
+                {
+                    "quantity": "1",
+                    "name": "1 hot green chili"
+                },
+                {
+                    "quantity": "1",
+                    "name": "splash of Pernod or Vermouth"
+                },
+                {
+                    "quantity": "1 tsp",
+                    "name": "baby capers",
+                    "type": ""
+                },
+                {
+                    "quantity": "1",
+                    "name": "handfull dill",
+                    "type": "chopped"
+                },
+                {
+                    "quantity": "",
+                    "name": "olive oil"
+                }
+            ],
+            "instruction": [
+                "In a large pan, heat olive oil, add the anchovy and break down slightly with a wooden spoon.",
+                "Add the rosemary, lemongrass and chili and saute for 1-2 minutes to infuse the flavours in the oil. Add the fennel and continue sauteing for about 3 minutes. Add the pernod and tilt towards the flame (or use a lighter if cooking on induction), continue cooking for 2 minutes after the fire has died down to soften the fennel. Add the tomatoes and capers, cooking for about 3 minutes longer to allow them to break down a little.",
+                "Lower the heat and break in the eggs, seasoning them with salt (the rest should be salty enough thanks to the anchovy).",
+                "Cook for about 5 minutes, use the spoon to assure no parts of white remain uncooked. You want cooked white and runny yolk (unless you want something else, but in that case you´re on your own). Finish with chopped dill and a drizzle of olive oil."
+            ],
+            "imageURL": "**",
+            "originalURL": "http://shemeshkitchen.com/not-shakshuka/"
+        },
+            "category-num": "1",
+            "main": {
+    },
+}
