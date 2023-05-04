@@ -1,27 +1,60 @@
-function egg(eggid){
 
-    var eggid;
-    let eggTitle;
+let recipeData;
+let recipeTitle;
+let idNum;
 
-    var eggArray = [];
-    for (i = 0; i < 11; i++) {
-      eggArray[i] = new Image();
-      eggArray[i].src = 'assets/egg' + eggid + '.gif';
-    }
+let eggId;
+let eggImg;
+let eggTitle;
+let eggArray = [];
+let Arraysrc;
 
-    document.getElementById(eggid).src = 'assets/egg' + eggid + '.gif';
-    eggImg = document.getElementById(eggid);
-    eggTitle = document.getElementById(eggid).title;
-    document.getElementById('code').innerHTML =  eggTitle;
-    
-    window.setTimeout(function(){
-      document.getElementById(eggid).src = 'assets/egg' + eggid + '.png';
-      }, 5000);
+$(document).ready(function () {
+
+  $.getJSON("./json/recipes.json", function (data) {
+    dataFromJSON = data;
+    for (let j = 0; j < dataFromJSON.length; j++) {
     }
-    
-     function change() {
-        var elem = document.getElementById("btn-a");
-        var list = document.getElementById("breakfast-a")
-        if (elem.value=="▾") elem.value = "▸", list.style.display = 'none';
-        else elem.value = "▾", list.style.display = 'inline';
-    }
+    recipeData = dataFromJSON.recipes;
+    run();
+  });
+
+
+  function run() {
+    console.log(recipeData[0]);
+  };
+
+  $(".eggimg").on({
+    'click': function () {
+      eggId = $(this).attr("id");
+      eggImg = document.getElementsByClassName("eggimg");
+      eggImg.src = "assets/egg" + eggId + ".gif";
+      eggImg.title = $(this).attr("title");
+      $("#code").text(eggImg.title);
+
+      for (i = 0; i < 11; i++) {
+        eggArray[i] = new Image();
+        eggArray[i].src = "assets/egg" + eggId + ".gif";
+      }
+
+      this.src = eggArray[eggId].src;
+
+      setTimeout(animEgg, 4500, "done");
+      
+      function animEgg(p1) {
+        eggImg.src = "assets/egg" + eggId + ".png";
+        console.log(p1);
+      }
+      }
+      });
+
+      // function change() {
+      //   var elem = $("#btn-a");
+      //   var list = $("#breakfast-a")
+      //   if (elem.value == "▾") elem.value = "▸", list.style.display = "none";
+      //   else elem.value = "▾", list.style.display = "inline";
+      // }
+
+
+    });
+

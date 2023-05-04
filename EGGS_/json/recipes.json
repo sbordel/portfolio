@@ -1,0 +1,28 @@
+{
+    "recipes": [
+        {
+            "id": 0,
+            "title": "Omelette",
+            "contents": [
+                "something",
+                "something"
+            ],
+            "ingredients": [
+                "ing1",
+                "ing2"
+            ],
+        },
+        {
+            "id": 1,
+            "title": "Burrito",
+            "contents": [
+                "something",
+                "something"
+            ],
+            "ingredients": [
+                "ing1",
+                "ing2"
+            ]
+        }
+    ]
+}

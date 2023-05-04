@@ -1,0 +1,40 @@
+{
+    "label": "Recipes",
+    "subLabel": "List of breakfast recipes",
+    "recipes":
+        {
+            "id": 1,
+            "title": "Fennel Shakshuka",
+            "type": "breakfast",
+            "originalURL": "http://shemeshkitchen.com/not-shakshuka/",
+            "ingredients": [
+            "In a large pan, heat olive oil, add the anchovy and break down slightly with a wooden spoon.",
+            "Add the rosemary, lemongrass and chili and saute for 1-2 minutes to infuse the flavours in the oil. Add the fennel and continue sauteing for about 3 minutes. Add the pernod and tilt towards the flame (or use a lighter if cooking on induction), continue cooking for 2 minutes after the fire has died down to soften the fennel. Add the tomatoes and capers, cooking for about 3 minutes longer to allow them to break down a little.",
+            "Lower the heat and break in the eggs, seasoning them with salt (the rest should be salty enough thanks to the anchovy).",
+            "Cook for about 5 minutes, use the spoon to assure no parts of white remain uncooked. You want cooked white and runny yolk (unless you want something else, but in that case you're on your own). Finish with chopped dill and a drizzle of olive oil."
+        ],
+            "steps": {
+                "1": "In a large pan, heat olive oil, add the anchovy and break down slightly with a wooden spoon.",
+                "2": "Add the rosemary, lemongrass and chili and saute for 1-2 minutes to infuse the flavours in the oil. Add the fennel and continue sauteing for about 3 minutes. Add the pernod and tilt towards the flame (or use a lighter if cooking on induction), continue cooking for 2 minutes after the fire has died down to soften the fennel. Add the tomatoes and capers, cooking for about 3 minutes longer to allow them to break down a little.",
+                "3": "Lower the heat and break in the eggs, seasoning them with salt (the rest should be salty enough thanks to the anchovy).",
+                "4": "Cook for about 5 minutes, use the spoon to assure no parts of white remain uncooked. You want cooked white and runny yolk (unless you want something else, but in that case you're on your own). Finish with chopped dill and a drizzle of olive oil."
+            }
+        },
+        {
+            "id": 2,
+            "title": "blabla",
+            "originalURL": "",
+            "ingredients": [
+                "In a large pan, heat olive oil, add the anchovy and break down slightly with a wooden spoon.",
+                "Add the rosemary, lemongrass and chili and saute for 1-2 minutes to infuse the flavours in the oil. Add the fennel and continue sauteing for about 3 minutes. Add the pernod and tilt towards the flame (or use a lighter if cooking on induction), continue cooking for 2 minutes after the fire has died down to soften the fennel. Add the tomatoes and capers, cooking for about 3 minutes longer to allow them to break down a little.",
+                "Lower the heat and break in the eggs, seasoning them with salt (the rest should be salty enough thanks to the anchovy).",
+                "Cook for about 5 minutes, use the spoon to assure no parts of white remain uncooked. You want cooked white and runny yolk (unless you want something else, but in that case you're on your own). Finish with chopped dill and a drizzle of olive oil."
+            ],
+                "steps": {
+                    "1": "In a large pan, heat olive oil, add the anchovy and break down slightly with a wooden spoon.",
+                    "2": "Add the rosemary, lemongrass and chili and saute for 1-2 minutes to infuse the flavours in the oil. Add the fennel and continue sauteing for about 3 minutes. Add the pernod and tilt towards the flame (or use a lighter if cooking on induction), continue cooking for 2 minutes after the fire has died down to soften the fennel. Add the tomatoes and capers, cooking for about 3 minutes longer to allow them to break down a little.",
+                    "3": "Lower the heat and break in the eggs, seasoning them with salt (the rest should be salty enough thanks to the anchovy).",
+                    "4": "Cook for about 5 minutes, use the spoon to assure no parts of white remain uncooked. You want cooked white and runny yolk (unless you want something else, but in that case you're on your own). Finish with chopped dill and a drizzle of olive oil."
+                }
+            }
+        }
