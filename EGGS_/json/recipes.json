@@ -1,27 +1,77 @@
 {
-    "recipes": [
+    "Recipes": [
         {
-            "id": 0,
-            "title": "Omelette",
-            "contents": [
-                "something",
-                "something"
+            "Title": "Fennel Shakshuka",
+            "Id": 0,
+            "Type": "Breakfast",
+            "OriginalURL": "http://shemeshkitchen.com/not-shakshuka/",
+            "Ingredients": [
+                "4 eggs",
+                "10-12 cherry tomatoes, quartered",
+                "½ fennel, finely sliced",
+                "1 stalk lemongrass, bashed and finely chopped",
+                "5-7 anchovy fillets",
+                "1 sprig rosemary, leaves finely chopped",
+                "1 hot green chili (optional)",
+                "Vermouth or Pernod",
+                "capers, roughly chopped",
+                "handful dill, chopped",
+                "olive oil",
+                "flaky salt"
             ],
-            "ingredients": [
-                "ing1",
-                "ing2"
-            ],
+            "Steps": [
+                "In a large pan, heat olive oil, add the anchovy and break down slightly with a wooden spoon.",
+                "Add the rosemary, lemongrass and chili and saute for 1-2 minutes to infuse the flavours in the oil. Add the fennel and continue sauteing for about 3 minutes. Add the pernod and tilt towards the flame (or use a lighter if cooking on induction), continue cooking for 2 minutes after the fire has died down to soften the fennel. Add the tomatoes and capers, cooking for about 3 minutes longer to allow them to break down a little.",
+                "Lower the heat and break in the eggs, seasoning them with salt (the rest should be salty enough thanks to the anchovy).",
+                "Cook for about 5 minutes, use the spoon to assure no parts of white remain uncooked. You want cooked white and runny yolk (unless you want something else, but in that case you're on your own). Finish with chopped dill and a drizzle of olive oil."
+            ]
         },
         {
-            "id": 1,
-            "title": "Burrito",
-            "contents": [
-                "something",
-                "something"
+            "Title": "Vegan Banana Chocolate Chip Muffin",
+            "Id": 6,
+            "Type": "Baked Goods",
+            "OriginalURL": "https://cloudykitchen.com/blog/vegan-banana-muffins/#tasty-recipes-16894-jump-target",
+            "Ingredients": [
+                "240 g Plant based milk",
+                "150 g granulated sugar",
+                "110 g neutral oil",
+                "14 g (3 tsp) apple cider vinegar",
+                "14 g (3 tsp) vanilla extract or vanilla bean paste",
+                "290 g all purpose flour",
+                "1 tsp baking powder",
+                "1 tsp baking soda",
+                "6 g (1 tsp) salt",
+                "280 g very ripe banana, diced (not mashed)"
             ],
-            "ingredients": [
-                "ing1",
-                "ing2"
+            "Steps": [
+                "Preheat the oven to 350°F (180°C). Grease your muffin pan.",
+                "In a small bowl, whisk together the milk, sugar, oil, apple cider vinegar and vanilla.",
+                "In a medium bowl, whisk together the flour, baking powder, baking soda, and salt. Add the wet ingredients and mix until just combined. Add the chopped banana and mix to incorporate, then fold in the chopped chocolate.",
+                "Divide the batter evenly between the 6 muffin cups. Sprinkle the tops with extra chocolate",
+                "Bake the muffins for 20 to 22 minutes or until the tops spring back when lightly pressed.",
+                "Remove from the oven and allow to cool in the pan for 5-10 minutes then remove from the pan and allow to cool completely on a wire rack."
+            ]
+        },
+        {
+            "Title": "Brown Butter Miso Coffee Chocolate Chip Cookies",
+            "Id": 6,
+            "Type": "Baked Goods",
+            "OriginalURL": "https://www.purelykaylie.com/vegan-chocolate-chip-cookies/#tasty-recipes-7002-jump-target",
+            "Ingredients": [
+                "112 g browned butter (original recipe asks for regular vegan butter)",
+                "220 g light brown sugar (i used 190 cup of brown sugar + 30g of coconut sugar)",
+                "3 tbsp granulated sugar",
+                "2 tbsp white miso paste (not included in original recipe)",
+                "65 ml (1/4 cup) brewed coffee (original recipe asks for plant-based milk)",
+                "2 tsp vanilla extract",
+                "219 grams all-purpose flour",
+                "1 tsp baking soda",
+                "1/4 tsp salt",
+                "1 cup chocolate chips"
+            ],
+            "Steps": [
+                "",
+                ""
             ]
         }
     ]
