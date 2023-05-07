@@ -1,6 +1,7 @@
 
 let recipeData = [];
 let recipeTitle;
+let recipeId;
 let recipeType;
 let recipeIng = [];
 let recipeSteps = [];
@@ -23,6 +24,7 @@ $(document).ready(function () {
 
     for (let i = 0; i < recipeData.length; i++) {
       recipeTitle = recipeData[i].Title;
+      recipeId = recipeData[i].Id;
       recipeType = recipeData[i].Type;
       recipeIng = recipeData[i].Ingredients;
       recipeSteps = recipeData[i].Steps;
@@ -30,22 +32,10 @@ $(document).ready(function () {
     }
   });
 
-
-  // function run() {
-  //   recipeData;
-  //   for (let i = 0; i < recipeData.length; i++) {
-  //     recipeTitle = recipeData[i].Title;
-  //     recipeType = recipeData[i].Type;
-  //     recipeIng = recipeData[i].Ingredients;
-  //     recipeSteps = recipeData[i].Steps;
-  //     recipeURL = recipeData[i].OriginalURL;
-  //   }
-  //   console.log(recipeTitle[2]);
-  // };
-
   $(".eggimg").on({
     'click': function () {
-      console.log(recipeData[].Type);
+      console.log(recipeId[i]==6);
+      // console.log(recipeData[1].Type);
       eggId = $(this).attr("id");
       eggImg = document.getElementsByClassName("eggimg");
       eggImg.src = "assets/egg" + eggId + ".gif";
