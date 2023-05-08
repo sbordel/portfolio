@@ -97,11 +97,12 @@ html, body {
     border:black solid;
     border-width: 0.5px 1px 1px 1px;
   }
-  h2{
+  h2, h3 {
     display: inline;
     font-weight: lighter;
     font-size: 1.2em;
     margin: 0;
+    text-transform: uppercase;
   }
   input[type=button]{
     border-radius: 0;
@@ -110,4 +111,10 @@ html, body {
 }
   #breakfast-a{
     display: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+  ul li::marker {
+    content:"│├── ";
   }

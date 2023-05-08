@@ -30,6 +30,7 @@ $(document).ready(function () {
         // console.log(recipeData[1].Type);
         eggId = $(this).attr("id");
         eggType = $(this).attr("alt");
+
         eggImg = document.getElementsByClassName("eggimg");
         eggImg.src = "assets/egg" + eggId + ".gif";
         eggImg.title = $(this).attr("title");
@@ -41,6 +42,9 @@ $(document).ready(function () {
         }
 
         this.src = eggArray[eggId].src;
+
+        console.log(eggType);
+        $("h2:first-of-type").text(eggType);
 
         setTimeout(animEgg, 4500, "done");
 
@@ -69,7 +73,6 @@ $(document).ready(function () {
       for (let l = 0; l < selectList.length; l++) {
         recipeTitle = selectList[l].Title;
         recipeList.push(recipeTitle);
-
         recipeType = selectList[l].Type;
         recipeIng = selectList[l].Ingredients;
         recipeSteps = selectList[l].Steps;
