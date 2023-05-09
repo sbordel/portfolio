@@ -1,20 +1,12 @@
 
 let recipeData = [];
 let recipeTitle;
-let recipeId;
-let recipeType;
-let recipeIng = [];
-let recipeSteps = [];
-let recipeURL;
 let idNum;
-
 let selectList;
-
 let eggId;
 let eggImg;
 let eggTitle;
 let eggArray = [];
-let Arraysrc;
 
 $(document).ready(function () {
 
@@ -30,8 +22,7 @@ $(document).ready(function () {
 
     $(".eggimg").on({
       'click': function () {
-          $("#menu-list").text("");
-        // console.log(recipeData[1].Type);
+        $("#menu-list").text("");
         eggId = $(this).attr("id");
         eggType = $(this).attr("alt");
 
@@ -67,55 +58,59 @@ $(document).ready(function () {
         }
 
         selectList = fullList.filter((recipe) => {
-           if (recipe.Id == idNum){
-          return recipe.Title;
+          if (recipe.Id == idNum) {
+            return recipe.Title;
           }
         });
-        console.log(selectList);
 
-      for (let l = 0; l < selectList.length; l++) {
-        recipeTitle = selectList[l].Title;
-        recipeList.push(recipeTitle);
-        recipeType = selectList[l].Type;
-        recipeIng = selectList[l].Ingredients;
-        recipeSteps = selectList[l].Steps;
-        recipeURL = selectList[l].OriginalURL;
+        for (let l = 0; l < selectList.length; l++) {
+          recipeTitle = selectList[l].Title;
+          recipeList.push(recipeTitle);
+        }
+
+        let menuList = document.getElementById("menu-list");
+        let menuIng = document.getElementById("menu-ing");
+        let menuStep = document.getElementById("menu-step");
+        let itemInd;
+
+        recipeList.forEach((item, index) => {
+          itemInd = `${index}`;
+          console.log(itemInd)
+          let li = document.createElement("li");
+          li.setAttribute("class", "menu-item")
+          li.setAttribute("value", itemInd);
+          let a = document.createElement("a");
+          $(a).attr("href", "#");
+          li.appendChild(a);
+          a.innerText = item;
+          menuList.appendChild(li);
+        })
+
+        $(".menu-item").click(function () {
+          $("h3:first-of-type").text($(this).text());
+          $("#menu-ing").text("");
+          $("#menu-step").text("");
+
+          let itemNum = $(this).attr("value");
+          let itemIng = selectList[itemNum].Ingredients;
+
+          itemIng.forEach((ingredient) => {
+            let ing = document.createElement("li");
+            ing.setAttribute("id", "item-ing");
+            ing.innerText = ingredient;
+            menuIng.appendChild(ing);
+          })
+
+          let itemStep = selectList[itemNum].Steps;
+
+          itemStep.forEach((instruction) => {
+            let step = document.createElement("li");
+            step.setAttribute("id", "item-step");
+            step.innerText = instruction;
+            menuStep.appendChild(step);
+          })
+        })
       }
-
-      let menuList = document.getElementById("menu-list");
-      // let menuRec = document.getElementById("menu-recipe");
-      let itemInd; 
-
-      recipeList.forEach((item, index)=>{
-        itemInd = `${index}`;
-        console.log(itemInd)
-        let li = document.createElement("li");
-        li.setAttribute("class", "menu-item")
-        li.setAttribute("value", itemInd);
-        let a = document.createElement("a");
-        // let itemLink =  
-        $(a).attr("href", "#");
-        li.appendChild(a);
-        a.innerText = item;
-        menuList.appendChild(li);
-  
-      })
-
-      $(".menu-item").click(function(){
-        $("h3:first-of-type").text($(this).text());
-        console.log($(this).attr("value"))
-      })
-
-    //   let menuRec = document.getElementById("menu-recipe");
-    //   $("h3:first-of-type").text(eggType);
-
-    // selectList.forEach((recipe)=>{
-    //   let ing = document.createElement("li");
-    //   // ing.setAttribute("id", "item-ing");
-    //   ing.innerText = recipe;
-    //   menuRec.appendChild(ing);
-    // })
-    }
     });
 
 

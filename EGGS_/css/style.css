@@ -146,12 +146,6 @@ body::-webkit-scrollbar {
   a:active{
     color: #0110d9;;
   }
-  /* input[type=button]{
-    border-radius: 0;
-    border: 0;
-    background-color: #f5f4b0;
-}
-  */
   ul{
     list-style-type: none;
   }
