@@ -8,6 +8,8 @@ let recipeSteps = [];
 let recipeURL;
 let idNum;
 
+let selectList;
+
 let eggId;
 let eggImg;
 let eggTitle;
@@ -25,8 +27,10 @@ $(document).ready(function () {
   });
 
   function run() {
+
     $(".eggimg").on({
       'click': function () {
+          $("#menu-list").text("");
         // console.log(recipeData[1].Type);
         eggId = $(this).attr("id");
         eggType = $(this).attr("alt");
@@ -43,7 +47,6 @@ $(document).ready(function () {
 
         this.src = eggArray[eggId].src;
 
-        console.log(eggType);
         $("h2:first-of-type").text(eggType);
 
         setTimeout(animEgg, 4500, "done");
@@ -58,7 +61,6 @@ $(document).ready(function () {
         var recipeList = [];
         var selectList = [];
 
-        console.log(idNum);
         for (let k = 0; k < recipeData.length; k++) {
           selectTitle = recipeData[k].Title;
           fullList.push(recipeData[k]);
@@ -69,6 +71,7 @@ $(document).ready(function () {
           return recipe.Title;
           }
         });
+        console.log(selectList);
 
       for (let l = 0; l < selectList.length; l++) {
         recipeTitle = selectList[l].Title;
@@ -78,20 +81,45 @@ $(document).ready(function () {
         recipeSteps = selectList[l].Steps;
         recipeURL = selectList[l].OriginalURL;
       }
-      console.log(recipeList);
-      }
+
+      let menuList = document.getElementById("menu-list");
+      // let menuRec = document.getElementById("menu-recipe");
+      let itemInd; 
+
+      recipeList.forEach((item, index)=>{
+        itemInd = `${index}`;
+        console.log(itemInd)
+        let li = document.createElement("li");
+        li.setAttribute("class", "menu-item")
+        li.setAttribute("value", itemInd);
+        let a = document.createElement("a");
+        // let itemLink =  
+        $(a).attr("href", "#");
+        li.appendChild(a);
+        a.innerText = item;
+        menuList.appendChild(li);
+  
+      })
+
+      $(".menu-item").click(function(){
+        $("h3:first-of-type").text($(this).text());
+        console.log($(this).attr("value"))
+      })
+
+    //   let menuRec = document.getElementById("menu-recipe");
+    //   $("h3:first-of-type").text(eggType);
+
+    // selectList.forEach((recipe)=>{
+    //   let ing = document.createElement("li");
+    //   // ing.setAttribute("id", "item-ing");
+    //   ing.innerText = recipe;
+    //   menuRec.appendChild(ing);
+    // })
+    }
     });
 
 
   }
-
-  // function change() {
-  //   var elem = $("#btn-a");
-  //   var list = $("#breakfast-a")
-  //   if (elem.value == "▾") elem.value = "▸", list.style.display = "none";
-  //   else elem.value = "▾", list.style.display = "inline";
-  // }
-
 
 });
 

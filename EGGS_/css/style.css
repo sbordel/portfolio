@@ -5,6 +5,9 @@ html, body {
   }
   body {
     background-color: #b0a983;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
   }
   @font-face {
     font-family: 'Lincoln/MITRE L/M 5x7';
@@ -13,6 +16,30 @@ html, body {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+/* scrollbar */
+/* hidden scrollbar on index */
+body::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+::-webkit-scrollbar {
+  width: 0.625rem; /* 10px */
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background: #f5f4b0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #f5f4b0;
 }
   .carton {
     width: 75vw;
@@ -83,6 +110,11 @@ html, body {
   .text-box{
     height: 100%;
     overflow: scroll;
+    scrollbar-width: none;
+  }
+  .text-box::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
   }
   #b1, #b2{
     box-sizing: border-box;
@@ -104,17 +136,26 @@ html, body {
     margin: 0;
     text-transform: uppercase;
   }
-  input[type=button]{
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover{
+    font-style: italic;
+  }
+  a:active{
+    color: #0110d9;;
+  }
+  /* input[type=button]{
     border-radius: 0;
     border: 0;
     background-color: #f5f4b0;
 }
-  #breakfast-a{
-    display: none;
-  }
+  */
   ul{
     list-style-type: none;
   }
   ul li::marker {
-    content:"│├── ";
+    content:"  ├── ";
   }
+
