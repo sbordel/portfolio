@@ -1,32 +1,36 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #b0a983;
-  }
-  body {
-    background-color: #b0a983;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    scrollbar-width: none;
-  }
-  @font-face {
-    font-family: 'Lincoln/MITRE L/M 5x7';
-    src: url('../fonts/LincolnMITRE/LincolnMITRE-LM5x7.woff2') format('woff2'),
-        url('../fonts/LincolnMITRE/LincolnMITRE-LM5x7.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b0a983;
+}
+
+body {
+  background-color: #b0a983;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+@font-face {
+  font-family: 'Lincoln/MITRE L/M 5x7';
+  src: url('../fonts/LincolnMITRE/LincolnMITRE-LM5x7.woff2') format('woff2'),
+    url('../fonts/LincolnMITRE/LincolnMITRE-LM5x7.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* scrollbar */
-/* hidden scrollbar on index */
 body::-webkit-scrollbar {
   display: none;
   width: 0 !important;
 }
+
 ::-webkit-scrollbar {
-  width: 0.625rem; /* 10px */
+  width: 0.625rem;
 }
+
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-button,
 ::-webkit-scrollbar-corner {
@@ -41,115 +45,197 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar-track-piece {
   background: #f5f4b0;
 }
-  .carton {
-    width: 75vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+
+.carton {
+  width: 74vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+svg {
+  width: 90%;
+  vertical-align: middle;
+}
+
+.egg-index {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 59vw;
+}
+
+.eggimg {
+  width: 12vw;
+  margin: 0.4%;
+  box-sizing: border-box;
+}
+
+.eggimg:hover {
+  filter: drop-shadow(0 0 0.75rem #f6f479);
+}
+
+.egg-zoom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 20px;
+}
+
+.egg-zoom #color {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border: 5px outset #876b5e;
+  background-color: #876b5e;
+}
+
+.egg-zoom #code {
+  display: inline-flex;
+  margin-left: 10px;
+  font-family: 'Lincoln/MITRE L/M 5x7';
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.index {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f5f4b0;
+  width: 26vw;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.text-box {
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  background-color: #f5f4b0;
+}
+
+.text-box::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+#b1,
+#b2 {
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: 20px;
+}
+
+#b1 {
+  height: 40%;
+  border: black solid;
+  border-width: 1px 1px 0.5px 1px;
+}
+
+#b2 {
+  height: 60%;
+  border: black solid;
+  border-width: 0.5px 1px 1px 1px;
+}
+
+h2,
+h3 {
+  display: inline;
+  font-weight: lighter;
+  font-size: 1.2em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+a:active {
+  color: #0110d9;
+}
+
+a#link {
+  text-decoration: none;
+  color: #0110d9;
+}
+
+a#link:hover {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+a#link:active {
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li::marker {
+  content: "  ├── ";
+}
+
+#menu-ing li::marker {
+  all: unset;
+}
+
+#menu-ing {
+  list-style-position: outside;
+  padding-left: 5%;
+}
+
+#menu-ing li {
+  list-style-type: circle;
+  padding-left: 5px;
+}
+
+@media (max-width: 900px) {
+  .carton,
+  .egg-zoom {
+    display: none;
+  }
+
+  body {
     display: -webkit-flex;
     display: flex;
-    -webkit-align-items: center; 
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  svg {
-    width: 90%;
-    vertical-align: middle;
-  }
-  .egg-index{
-    position: absolute;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center; 
+    -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 60vw;
-  }
-  .eggimg{
-    width: 12vw;
-    margin: 0.5%;
-     box-sizing: border-box;
-  } 
-  .eggimg:hover{
-    filter: drop-shadow(0 0 0.75rem #f6f479);
-  }
-  .egg-zoom{
-    position: fixed;
-    bottom: 0; 
-    left: 0;
-    margin-left: 20px;
-  }
-  .egg-zoom #color{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
-    border: 5px outset #876b5e;
-    background-color: #876b5e;
-  }
-  .egg-zoom #code{
-    display: inline-flex;
-    margin-left: 10px;
-    font-family: 'Lincoln/MITRE L/M 5x7';
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-  .index {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #f5f4b0;
-    width: 25vw;
-    height: 100vh;
-    font-family:'Courier New', Courier, monospace
-  }
-  .text-box{
-    height: 100%;
-    overflow: scroll;
-    scrollbar-width: none;
-  }
-  .text-box::-webkit-scrollbar {
-    display: none;
-    width: 0 !important;
-  }
-  #b1, #b2{
-    box-sizing: border-box;
-    height: 50%;
-    padding: 25px;
-  }
-  #b1{
-    border:black solid;
-    border-width: 1px 1px 0.5px 1px;
-  }
-  #b2{
-    border:black solid;
-    border-width: 0.5px 1px 1px 1px;
-  }
-  h2, h3 {
-    display: inline;
-    font-weight: lighter;
-    font-size: 1.2em;
-    margin: 0;
-    text-transform: uppercase;
-  }
-  a{
-    text-decoration: none;
-    color: #000000;
-  }
-  a:hover{
-    font-style: italic;
-  }
-  a:active{
-    color: #0110d9;;
-  }
-  ul{
-    list-style-type: none;
-  }
-  ul li::marker {
-    content:"  ├── ";
   }
 
+  .index {
+    width: 90vw;
+    height: 95vh;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    position: relative;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

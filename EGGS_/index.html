@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>sam's eggs</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
   <div class="carton">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 2"
@@ -39,11 +43,11 @@
         <g data-name="row 2">
           <path d="M204 329h204v204H204z" style="fill:url(#d);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
             transform="rotate(-90 306 431)" /> <!-- box 5 -->
-            <path d="M469 329h204v204H469z" style="fill:url(#c);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
+          <path d="M469 329h204v204H469z" style="fill:url(#c);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
             transform="rotate(-90 571 431)" /> <!-- box 6 -->
-            <path d="M733 329h204v204H733z" style="fill:url(#b);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
+          <path d="M733 329h204v204H733z" style="fill:url(#b);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
             transform="rotate(-90 835 431)" /> <!-- box 7 -->
-            <path d="M997 329h204v204H997z" style="fill:url(#a);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
+          <path d="M997 329h204v204H997z" style="fill:url(#a);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
             transform="rotate(-90 1099 431)" /> <!-- box 8 -->
         </g>
         <g data-name="row 1">
@@ -53,56 +57,45 @@
             transform="rotate(-90 571 169)" /> <!-- box 2 -->
           <path d="M733 67h204v204H733z" style="fill:url(#h);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
             transform="rotate(-90 835 169)" /> <!-- box 3 -->
-            <path d="M997 67h204v204H997z" style="fill:url(#g);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
+          <path d="M997 67h204v204H997z" style="fill:url(#g);stroke:#0006ff;stroke-miterlimit:10;stroke-width:2px"
             transform="rotate(-90 1099 169)" /> <!-- box 4 -->
         </g>
       </g>
     </svg>
     <div class="egg-index">
-      <!-- onclick="egg(this.id)" -->
       <img class="eggimg" id="1" src="assets/egg1.png" title="O-BR34KF457" alt="breakfast">
       <img class="eggimg" id="2" src="assets/egg2.png" title="1-M41N" alt="main">
       <img class="eggimg" id="3" src="assets/egg3.png" title="2-S1D32" alt="sides">
-      <img class="eggimg" id="4" src="assets/egg4.png" title="3-S4l4D2" alt="salad">
+      <img class="eggimg" id="4" src="assets/egg4.png" title="3-S4l4D2" alt="salads">
       <img class="eggimg" id="5" src="assets/egg5.png" title="4-D3S53R7" alt="dessert">
       <img class="eggimg" id="6" src="assets/egg6.png" title="5-KW1CK5N4X" alt="quick snacks">
       <img class="eggimg" id="7" src="assets/egg7.png" title="6-8K3D9OOD2" alt="baked goods">
       <img class="eggimg" id="8" src="assets/egg8.png" title="7-DR1NK48l32" alt="drinkables">
     </div>
   </div>
-    <div class="egg-zoom"><span id="color"></span> <p id="code"></p></div>
+  <div class="egg-zoom"><span id="color"></span>
+    <p id="code"></p>
+  </div>
   <div class="index">
     <div class="box" id="b1">
       <div class="text-box">
-      <span>├── </span><h2> </h2>
-      <ul id="menu-list">
-        <li></li>
-        <!-- <br><span>│   ├──</span><a></a> -->
-      </ul>
-      <!-- <br><span>│   ├──</span> <a>egg<input onclick="change()" type="button" value="▸" id="btn-a"></input></a>
-      <span id="breakfast-a">
-          <br><span>│   │   ├──</span> <a>benedict</a>
-          <br><span>│   │   ├──</span> <a>poached egg</a>
-          <br><span>│   │   ├──</span> <a>frittata</a>
-          <br><span>│   │   └──</span> <a>omelet</a>
-      </span> -->
-      <!-- <br><span>│   ├──</span> <a>toast<input onclick="change()" type="button" value="▸" id="btn-b"></input></a>
-      <br><span>│   ├──</span> <a>pancakes<input onclick="change()" type="button" value="▸" id="btn-c"></input></a> 
-      <br><span>│   ├──</span> <a>burrito<input onclick="change()" type="button" value="▸" id="btn-d"></input></a>  
-      <br><span>│   ├──</span> <a>quiche<input onclick="change()" type="button" value="▸" id="btn-e"></input></a>  
-      <br><span>│   ├──</span> <a>waffles<input onclick="change()" type="button" value="▸" id="btn-f"></input></a>  
-      <br><span>│   └──</span> <a>oats<input onclick="change()" type="button" value="▸" id="btn-g"></input></a>   -->
+        <h2></h2>
+        <ul id="menu-list">
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="box" id="b2">
-    <div class="text-box">
-      <h3></h3>
-     <ul id="menu-ing">
-     </ul>
-     <ol id="menu-step">
-     </ol>
+    <div class="box" id="b2">
+      <div class="text-box">
+        <h3></h3>
+        <br>
+        <a id="link" href=""></a>
+        <ul id="menu-ing">
+        </ul>
+        <ol id="menu-step">
+        </ol>
+      </div>
     </div>
-  </div>
   </div>
 </body>
+
 </html>

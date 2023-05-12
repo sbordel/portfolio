@@ -90,8 +90,16 @@ $(document).ready(function () {
           $("h3:first-of-type").text($(this).text());
           $("#menu-ing").text("");
           $("#menu-step").text("");
+          // $("#link").text("");
 
           let itemNum = $(this).attr("value");
+
+          let itemURL = selectList[itemNum].OriginalURL;
+          let url = document.getElementById("link");
+          $(url).attr("href", itemURL);
+          $(url).attr("target", "_blank")
+          $(url).text("original recipe");
+
           let itemIng = selectList[itemNum].Ingredients;
 
           itemIng.forEach((ingredient) => {
