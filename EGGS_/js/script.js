@@ -7,6 +7,10 @@ let eggId;
 let eggImg;
 let eggTitle;
 let eggArray = [];
+let eggColor;
+let eggClrs = ["#876b5e","#b6b1a8","#8c8c70","#c1c5cc","#9b937c","#6a5541","#8ea29d","#787040"];
+
+let eggZoom;
 
 $(document).ready(function () {
 
@@ -38,13 +42,18 @@ $(document).ready(function () {
 
         this.src = eggArray[eggId].src;
 
+        eggZoom = $("#color").css({
+          "border-color" : eggClrs[eggId - 1],
+          "background-color" : eggClrs[eggId - 1]
+       });
+        
+
         $("h2:first-of-type").text(eggType);
 
         setTimeout(animEgg, 4500, "done");
 
         function animEgg(p1) {
           eggImg.src = "assets/egg" + eggId + ".png";
-          console.log(p1);
         }
 
         idNum = parseInt(eggId) - 1;
@@ -75,7 +84,6 @@ $(document).ready(function () {
 
         recipeList.forEach((item, index) => {
           itemInd = `${index}`;
-          console.log(itemInd)
           let li = document.createElement("li");
           li.setAttribute("class", "menu-item")
           li.setAttribute("value", itemInd);
