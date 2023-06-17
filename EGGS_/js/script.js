@@ -8,7 +8,7 @@ let eggImg;
 let eggTitle;
 let eggArray = [];
 let eggColor;
-let eggClrs = ["#876b5e","#b6b1a8","#8c8c70","#c1c5cc","#9b937c","#6a5541","#8ea29d","#787040"];
+let eggCode = ["breakfast","main","sides","sweets","bread","condiments","beverage","misc"];
 
 let eggZoom;
 
@@ -42,12 +42,14 @@ $(document).ready(function () {
 
         this.src = eggArray[eggId].src;
 
-        eggZoom = $("#color").css({
-          "border-color" : eggClrs[eggId - 1],
-          "background-color" : eggClrs[eggId - 1]
-       });
-        
+        eggZoom = $("#marking").attr({
+              "src": "assets/marking/" + eggCode[eggId - 1] + ".jpg"
+            });
 
+            $(document).mousemove(function(e){
+              $(".egg-zoom").css({left:e.pageX, top:e.pageY});
+          });
+  
         $("h2:first-of-type").text(eggType);
 
         setTimeout(animEgg, 4500, "done");

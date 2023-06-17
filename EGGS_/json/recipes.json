@@ -2,8 +2,8 @@
    "Recipes": [
       {
          "Title": "Brown Butter Miso Coffee Chocolate Chip Cookies",
-         "Id": 6,
-         "Type": "Baked Goods",
+         "Id": 3,
+         "Type": "Sweets",
          "OriginalURL": "https://www.purelykaylie.com/vegan-chocolate-chip-cookies/#tasty-recipes-7002-jump-target",
          "Ingredients": [
             "112 g browned butter",
@@ -54,8 +54,8 @@
       },
       {
          "Title": "Matcha-Lemon-Cranberry Muffins",
-         "Id": 6,
-         "Type": "Baked Goods",
+         "Id": 3,
+         "Type": "Sweets",
          "OriginalURL": "https://www.beautifuleatsandthings.com/2018/03/16/light-and-fluffy-matcha-lemon-muffins/",
          "Ingredients": [
             "1 ¾ cups flour",
@@ -81,8 +81,8 @@
       },
       {
          "Title": "Vegan Banana Chocolate Chip Muffin",
-         "Id": 6,
-         "Type": "Baked Goods",
+         "Id": 3,
+         "Type": "Sweets",
          "OriginalURL": "https://cloudykitchen.com/blog/vegan-banana-muffins/#tasty-recipes-16894-jump-target",
          "Ingredients": [
             "240 g Plant based milk",
@@ -107,8 +107,8 @@
       },
       {
          "Title": "Vegan Carrot Muffins",
-         "Id": 6,
-         "Type": "Baked Goods",
+         "Id": 3,
+         "Type": "Sweets",
          "Ingredients": [
             "170 g all-purpose flour",
             "65 g wholewheat flour",
@@ -168,8 +168,8 @@
       },
       {
          "Title": "Preserved Ingredient Cannellini Bean Salad",
-         "Id": 3,
-         "Type": "Salads",
+         "Id": 2,
+         "Type": "Side",
          "OriginalURL": "https://www.instagram.com/p/Cm9cWVUocxP/",
          "Ingredients": [
             "1 15 oz can of cannellini beans",
@@ -189,8 +189,8 @@
       },
       {
          "Title": "Ranginak (Persian Date Walnut Dessert)",
-         "Id": 4,
-         "Type": "Dessert",
+         "Id": 3,
+         "Type": "Sweets",
          "OriginalURL": "https://www.instagram.com/p/CrJxQTHKed4/",
          "Ingredients": [
             "3 tbsp coconut sugar",
@@ -213,8 +213,8 @@
       },
       {
          "Title": "Fennel Syrup French 75",
-         "Id": 7,
-         "Type": "Drinkables",
+         "Id": 6,
+         "Type": "Beverage",
          "OriginalURL": "https://www.instagram.com/p/Cac0dARvipU/",
          "Ingredients": [
             "1-2 cups of finely chopped fennel stalks",
