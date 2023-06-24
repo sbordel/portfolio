@@ -17,6 +17,7 @@ let mbMenu;
 let mbCatg;
 let mbRecipe;
 
+
 $(document).ready(function () {
 
   $.getJSON("../json/recipes.json", function (data) {
@@ -59,6 +60,22 @@ $(document).ready(function () {
         eggImg.src = "assets/egg" + eggId + ".png";
       }
       getRecipe()
+
+      // $("#max").on({
+      //   'click': function () {
+      //     $("#b1").css("display", "none");
+      //     $(".carton").css("display", "none");
+      //     $(".main").css("display", "none");
+      //     $(".index").attr({ 
+      //       "position": "absolute",
+      //       "display": "flex",
+      //       "width": "100vw",
+      //       "height": "100vh",
+      //       "z-index": "9999"
+      //     });
+      //     $(".text-box").css("width", "100vw");
+      //   }
+      // });
     });
 
     $(".eggimg-mobile").click(function () {
@@ -67,6 +84,8 @@ $(document).ready(function () {
       mbMenu = document.getElementsByClassName("index");
       mbCatg = document.getElementById("b1");
       mbRecipe = document.getElementById("b2");
+      txtCatg = document.getElementsByClassName("text-box").mbCatg;
+      txtRecipe = document.getElementsByClassName("text-box").mbRecipe;
 
       $(mbMenu).css("display", "block");
       $(mbIndex).css("display", "none");
@@ -79,20 +98,29 @@ $(document).ready(function () {
 
       $("#close").on({
         'click': function () {
+          console.log(this)
           $(mbMenu).css("display", "none");
           $(mbIndex).css("display", "flex");
         }
       });
 
-      $(".menu-item").on({
+      getRecipe()
+
+      $("ul .menu-item").on({
         'click': function () {
           console.log(this)
-          // $(mbCatg).css("display", "none");
-          // $(mbRecipe).css("display", "block");
+          $(mbCatg).css("display", "none");
+          $(mbRecipe).css("display", "flex");
         }
       });
 
-      getRecipe()
+      $("#return").on({
+        'click': function () {
+          console.log(this)
+          $(mbCatg).css("display", "flex");
+          $(mbRecipe).css("display", "none");
+        }
+      });
     });
 
     function getRecipe() {
