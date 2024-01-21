@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="artboard_2" data-name="artboard 2" viewBox="0 0 287 291">
+  <defs>
+    <style>
+      .cls-1{fill:#fff}
+    </style>
+  </defs>
+  <g id="archive">
+    <path d="M81 17h195v4h4v4h4v191h-4v4h-68v49h-4v4H6v-4H2V78h4v-4h4v-4h63V25h4v-4h4v-4Z"/>
+    <path d="M6 269h25V159h4v-3h3v-4h139v4h3v3h4v110h24V78h-3v-4h-42v54h-4v3h-3v4H59v-4h-3v-3h-4V74H10v4H6v191z" class="cls-1"/>
+    <path d="M38 159h-3v110h145V159h-3v-3H38v3zm18-85v54h3v3h97v-3h3V74H56zm71-53v49h78v4h4v3h18v-3h3V21H127zm85 195h39V106h-3v-3h-36v113z" class="cls-1"/>
+    <path d="M87 170h41v4h10v3h4v4h3v7h4v7h3v39h-3v7h-4v3h-4v4h-3v3h-11v4H88v-4H77v-3h-3v-4h-4v-3h-4v-7h-3v-39h3v-7h4v-7h3v-4h4v-3h10v-4Zm4 3v4H81v3h-4v4h-4v7h-3v7h-3v32h3v7h4v4h3v3h4v4h11v3h31v-3h11v-4h4v-3h3v-4h4v-7h3v-32h-3v-7h-3v-7h-4v-4h-4v-3h-10v-4H91Zm34 54v3h-3v3h-3v3H96v-3h-3v-3h-3v-3h-3v-7h-3v-3h-3v3h3v7h3v3h3v3h3v3h3v4h23v-4h3v-3h3v-3h3v-3h3v-7h3v-3h-3v3h-3v7m-33-32h-7v7h7v-7Zm31 0h-7v7h7v-7Zm22-74h-22V84h22v37Zm-19-3h16V87h-16v31Zm90-51h-22V30h22v37Zm-19-3h16V33h-16v31Z"/>
+  </g>
+</svg>

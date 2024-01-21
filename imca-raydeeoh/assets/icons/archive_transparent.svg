@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 255">
+  <g id="artboard_2" data-name="artboard 2">
+    <g id="archive">
+      <path d="M78,0h195V3h4V7h3V198h-3v4h-68v49h-4v4H3v-4H0V60H3v-4H7v-3h63V7h4V3h4V0ZM3,251H28v-110h4v-3h2.88l.12-4H174v4h3v3h4v110h24V60h-3v-4h-42v54h-4v3h-3v4H56v-4h-3v-3h-4V56H7v4H3V251Zm32-110h-3v110H177v-110h-3v-3H35v3ZM53,56v54h3v3h97v-3h3V56H53ZM124,3V53h78v3h3v4h19v-3h3V3H124Zm85,195h39V88h-3v-3h-36v113Z"/>
+      <path d="M84,152h41v4h10v3h4v4h3v7h4v7h3v39h-3v7h-4v3h-4v4h-3v3h-11v4h-39v-4l-11-.09v-2.91h-3v-4h-4v-3h-4v-7h-3v-39h3v-7h4v-7h3v-4h4v-3h10v-4Zm4,3v4h-10v3h-4v4h-4v7h-3v7h-3v32h3v7h4v4h3v3h4v4h11v3h31v-3h11v-4h4v-3h3v-4h4v-7h3v-32h-3v-7h-3v-7h-4v-4h-4v-3h-10v-4h-33Zm34,54v3h-3v3h-3v3h-23v-3h-3v-3h-3v-3h-3v-7h-3v-3h-3v3h3v7h3v3h3v3h3v3h3v4h23v-4h3v-3h3v-3h3v-3h3v-7h3v-3h-3v3h-3v7m-33-32h-7v7s7,0,7,0v-7Zm31,0h-7v7h7v-7Z"/>
+      <path d="M145,103h-22v-37h22v37Zm-19-3h16v-31h-16v31Z"/>
+      <path d="M216,49h-22V12h22V49Zm-19-3h16V15h-16v31Z"/>
+    </g>
+  </g>
+</svg>
