@@ -1,3 +1,3 @@
 
-# ・゜゜・．ethylic froth's website [🔗](https://lobotomi-e.net)
+# ・゜゜・．ethylic froth's website [🔗](https://lobotomi-e.net/index.html)
 
