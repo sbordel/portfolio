@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="background-overlay">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sam's mini sites</title>
+  <meta name="description" content="***">
+  <meta name="author" content="sam">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body class="indexPage">
+  <main>
+    <span id="tooltip">�<span id="tooltipText">Welcome to my website!<br /><br />Select a piece of wrinkled paper to see
+        my little web pages</span></span>
+    <div id="index">
+      <nav>
+        <figure class="paperDiv">
+          <div id="paperClick" onclick="paperGif()"></div>
+          <div id="paperIndex"></div>
+        </figure>
+        <a href="projects/fungi/index.html" target="_blank"><img class="figure" id="sp1"
+            src="assets/pages/page_01.png" alt="page 1"></a>
+        <a href="projects/friends-only/index.html" target="_blank"><img class="figure" id="sp2"
+            src="assets/pages/page_02.png" alt="page 2"></a>
+        <a href="projects/fruit-salad/index.html" target="_blank"><img class="figure" id="sp3"
+            src="assets/pages/page_03.png" alt="page 3"></a>
+        <a href="projects/haiku-best-gill/index.html" target="_blank"><img class="figure" id="sp4"
+            src="assets/pages/page_04.png" alt="page 4"></a>
+        <a href="projects/mood/index.html" target="_blank"><img class="figure" id="sp5" src="assets/pages/page_12.png"
+            alt="page 5"></a>
+        <a href="projects/sonny-jim/index.html" target="_blank"><img class="figure" id="sp6"
+            src="assets/pages/page_06.png" alt="page 6"></a>
+        <a href="projects/mister-rabbit/index.html" target="_blank"><img class="figure" id="sp7"
+            src="assets/pages/page_07.png" alt="page 7"></a>
+        <a href="https://hybrid.concordia.ca/s_bordel/exercises/exercise_03/exercise_e3.php" target="_blank"><img
+            class="figure" id="sp8" src="assets/pages/page_08.png" alt="page 8"></a>
+        <!--
+          <a href="#"><img class="p3" id="sp9" src="assets/pages/page_19.png" alt="page 10"></a>
+          <a href="#"><img class="p3" id="sp10" src="assets/pages/page_10.png" alt="page 10"></a>
+          <a href="#"><img class="p3" id="sp11" src="assets/pages/page_11.png" alt="page 11"></a>
+          <a href="#"><img class="p4" id="sp12" src="assets/pages/page_05.png" alt="page 12"></a>
+          <a href="#"><img class="p4" id="sp13" src="assets/pages/page_13.png" alt="page 13"></a>
+          <a href="#"><img class="p4" id="sp14" src="assets/pages/page_14.png" alt="page 14"></a>
+          <a href="#"><img class="p4" id="sp15" src="assets/pages/page_15.png" alt="page 15"></a>
+          -->
+      </nav>
+    </div>
+  </main>
+  <footer>
+  </footer>
+</body>
+<script>
+  function paperGif() {
+    const paper = document.getElementById("paperIndex");
+    paper.classList.add('paperIndexAnim');
+
+    paper.addEventListener("webkitAnimationEnd", loadpageIndex);
+    function loadpageIndex() {
+      window.location.href = "../sunday-sites/index.html";
+    };
+  }
+</script>
+
+</html>

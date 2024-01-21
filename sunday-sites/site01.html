@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="background-overlay-pi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ephemerality</title>
+</head>
+<style>
+  body {
+    background-image: url('assets/01/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    position: absolute;
+    display: inline-block;
+    margin: 10px;
+  }
+  a .tooltipTxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: #F6EAA9;
+    color: #000;
+    border: 1px black solid;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 200%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  a:hover .tooltipTxt {
+    visibility: visible;
+    opacity: 1;
+  }
+  figcaption {
+    color: blue;
+  }
+  figcaption:active {
+    color: black;
+  }
+  figcaption:visited {
+    color: purple;
+  }
+  .bacteria:hover {
+    filter: contrast(200%) brightness(0.7);
+    mix-blend-mode: color-dodge;
+  }
+  .bacteria:active {
+    mix-blend-mode: exclusion;
+  }
+  #b1 {
+    right: 10vw;
+    top: 10vh;
+  }
+  #b2 {
+    right: 20vw;
+    bottom: 10vh;
+  }
+  #b3 {
+    left: 30vw;
+    bottom: 51vh;
+  }
+  #b4 {
+    left: 36vw;
+    bottom: 14vh;
+  }
+  #b5 {
+    left: 61vw;
+    top: 32vh;
+  }
+  #b6 {
+    right: 64vw;
+    top: 79vh;
+  }
+  #b7 {
+    left: 18vw;
+    top: 2vh;
+  }
+  #b8 {
+    right: 0vw;
+    bottom: 32vh;
+  }
+  #b9 {
+    left: 22vw;
+  }
+  #b10 {
+    right: 85vw;
+    bottom: 5vh;
+  }
+  #b11 {
+    left: 1vw;
+    top: 67vw;
+  }
+  #b12 {
+    left: 80vw;
+    top: 72vw;
+  }
+  #b13 {
+    right: 14vw;
+    bottom: 1vh;
+  }
+  #b14 {
+    left: 0vw;
+    top: 0vh;
+  }
+</style>
+<body>
+  <div class="container">
+    <a id="b1" href="https://340breform.org/userfiles/Final" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria1.png" alt="">
+      <figcaption>[1]</figcaption>
+      <span class="tooltipTxt">404</span>
+    </a>
+    <a id="b2" href="http://www.uchsc.edu/sop/pharmd/8.Experiential_Programs/-downloads/ginger.pdf" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria2.png" alt="">
+      <figcaption>[2]</figcaption>
+      <span class="tooltipTxt">can't connect</span> <!-- load forever -->
+    </a>
+    <a id="b3" href="https://www.commondreams.org/archive/2007/05/27/1487/" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria3.png" alt="">
+      <figcaption>[3]</figcaption>
+      <span class="tooltipTxt">404</span>
+    </a>
+    <a id="b4" href="https://biochem.wisc.edu/courses/biochem901/secure/materials/readings/08Sigmundsdottir_etal.pdf"
+      target="_blank">
+      <img class="bacteria" src="assets/01/bacteria4.png" alt="">
+      <figcaption>[4]</figcaption>
+      <span class="tooltipTxt">404</span>
+    </a>
+    <a id="b5"
+      href="https://technology-info.net/index.php/2019/01/09/8k-tv-tri-color-laser-hisense-quality-stunning-2019ces/"
+      target="_blank">
+      <img class="bacteria" src="assets/01/bacteria5.png" alt="">
+      <figcaption>[5]</figcaption>
+      <span class="tooltipTxt">can't connect</span>
+    </a>
+    <a id="b6" href="http://sourceforge.net/forum/forum.php?forum_id=634635" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria6.png" alt="">
+      <figcaption>[6]</figcaption>
+      <span class="tooltipTxt">404</span>
+    </a>
+    <a id="b7" href="http://www3.interscience.wiley.com/cgi-bin/fulltext/117989553/PDFSTART" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria7.png" alt="">
+      <figcaption>[7]</figcaption>
+      <span class="tooltipTxt">403</span>
+    </a>
+    <a id="b8" href="https://lib.mdpu.org.ua/load/Chemistry/Organic chemistry/Organic syntheses/English edition/2c-b.review"
+      target="_blank">
+      <img class="bacteria" src="assets/01/bacteria8.png" alt="">
+      <figcaption>[8]</figcaption>
+      <span class="tooltipTxt">security warning</span>
+    </a>
+    <a id="b9" href="https://pennakem.com/msds/625-86-5_Dimethylfuran_PAK_msds.pdf" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria9.png" alt="">
+      <figcaption>[9]</figcaption>
+      <span class="tooltipTxt">404</span>
+    </a>
+    <a id="b10" href="https://www.stsci.edu/ftp/observing/weekly_timeline/timeline_10_07_19" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria10.png" alt="">
+      <figcaption>[10]</figcaption>
+      <span class="tooltipTxt">404</span>
+    </a>
+    <a id="b11"
+      href="https://www.astrobiology.nasa.gov/ask-an-astrobiologist/answered/2011/10/27/2058/&sa=D&source=docs&ust=1656872739277637&usg=AOvVaw1DXboQKLy3d8uyxop7bOo1"
+      target="_blank">
+      <img class="bacteria" src="assets/01/bacteria11.png" alt="">
+      <figcaption>[11]</figcaption>
+      <span class="tooltipTxt">can't connect</span> <!-- load forever -->
+    </a>
+    <a id="b12" href="http://home.comcast.net/~kpheider/JPL-Small-Body-2009.gif" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria12.png" alt="">
+      <figcaption>[12]</figcaption>
+      <span class="tooltipTxt">no redirect</span>
+    </a>
+    <a id="b13" href="http://scully.cfa.harvard.edu/~cgi/ReturnPrepEph?d=d&o=B9951" target="_blank">
+      <img class="bacteria" src="assets/01/bacteria13.png" alt="">
+      <figcaption>[13]</figcaption>
+      <span class="tooltipTxt">can't connect</span>
+    </a>
+    <a id="b14" href="https://fungicyc.broadinstitute.org/PCWC541255/NEW-IMAGE?type=PATHWAY&object=TRIGLSYN-PWY"
+      target="_blank">
+      <img class="bacteria" src="assets/01/bacteria14.png" alt="">
+      <figcaption>[14]</figcaption>
+      <span class="tooltipTxt">can't connect</span>
+    </a>
+  </div>
+</body>
+
+</html>

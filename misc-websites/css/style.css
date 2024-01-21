@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  cursor: url(../assets/hand.png), default;
+  background-image: url('../assets/bg-3.png');
+  background-size: cover;
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'Garamondt';
+  src: url(../../fonts/Garamondt/Garamondt-Italic.woff);
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Garamondt';
+  src: url(../../fonts/Garamondt/Garamondt-Regular.woff);
+  font-weight: normal;
+}
+/* ***
+MAIN PAGE
+*** */
+.background-overlay {
+  background-image: url('../assets/background_pages.png');
+  background-position: 0 0 0 0;
+  background-size: 150%, cover;
+  overflow: scroll;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#folder-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-right: 3%;
+}
+#draggable {
+  width: 22vw;
+  margin: 30px;
+  filter: drop-shadow(0 0 15px rgb(166, 77, 255, 0.25));
+}
+#droppable {
+  width: 12vw;
+  padding-bottom: 15px;
+  margin: 30px;
+  filter: blur(0px) drop-shadow(0 0 30px rgb(166, 77, 255, 0.5));
+}
+#droppable:hover {
+  filter: blur(5px) drop-shadow(0 0 30px rgb(166, 77, 255, 0.5));
+}
+#arrow {
+  position: relative;
+  width: 12vw;
+  top: -10vw;
+  margin: 30px;
+}
+/* cursor */
+a {
+  cursor: url(../assets/hand.png), default;
+}
+/* ***
+INDEX PAGE
+*** */
+main img{
+  position: absolute;
+  width: 270px;
+  padding: 30px;
+  filter: blur(0px) drop-shadow(10px 15px 4px rgba(72, 92, 47, 0.75));
+}
+main img:hover{
+  mix-blend-mode: exclusion;
+  filter: drop-shadow(10px 15px 4px rgba(183, 163, 208, 0.75));
+}
+.presentation{
+  top: 0;
+  left: 0;
+}
+h1{
+  font-family: 'Times New Roman';
+  font-weight: lighter;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  z-index: 8;
+}
+/*
+PAGE HYPERLINK POSITIONING
+*/
+#tooltip {
+  font-family: 'Times New Roman';
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 15px;
+  top:0;
+  font-size: 15px;
+  padding: 5px;
+  z-index: 8;
+  display: inline-block;
+}
+#tooltip img{
+  width: auto;
+  padding: 5px;
+  z-index: 7;
+}
+#tooltip #tooltipText {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px; font-family: 'Times New';
+  font-size: 13px;
+  background: #ffffffb9;
+  border: 1px black solid;
+  z-index: 6;
+}
+#tooltip:hover #tooltipText {
+  visibility: visible;
+}
+/*
+PAGE SUBINDEX ANIMATION
+*/
+.paperDiv {
+  position: absolute;
+  width: 720px; 
+  height: 480px;
+  right: 15%;
+  top: 10%;
+}
+#paperClick{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 350px;
+  height: 250px;
+  z-index: 6;
+  cursor: url('../assets/loupe_2.png'), auto;
+}
+#paperIndex {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 720px; 
+  height: 480px;
+  z-index: 5;
+  filter: blur(0px) drop-shadow(10px 15px 4px rgba(72, 92, 47, 0.75));
+  background: transparent url('../assets/paper-unfolding.png') 0 0 no-repeat;   /* Our sprite as the viewport background */
+}
+.paperIndexAnim { 
+  -webkit-animation: unfolding 2s steps(12) forwards;
+}
+/* sprite keyframe animation */
+@-webkit-keyframes unfolding {
+    from { background-position: 0; }
+    to { background-position: -8640px;}
+    100% {transform: scale(2);}
+};
+/*
+PAGE HYPERLINK POSITIONING
+*/
+.figure{
+  position: absolute;
+  margin: 25px;
+  z-index: 7;
+}
+#sp1{
+  bottom: 0;
+  right: -20%;
+}
+#sp2{
+  top:  15%;
+  right: -20%;
+}
+#sp3{
+  bottom: -15%;
+  right: 5%;
+}
+#sp4{
+  bottom: -50%;
+  right: -30%;
+}
+#sp5{
+  bottom: -15%;
+  left: 5%;
+}
+#sp6{
+  top: 5%;
+  left: 5%;
+}
+#sp7{
+  bottom: -50%;
+  left: 0%;
+}
+#sp8{
+  bottom: -34%;
+  right: 35%;
+}
+#sp9{
+  top: 5%;
+  right: 10%;
+}

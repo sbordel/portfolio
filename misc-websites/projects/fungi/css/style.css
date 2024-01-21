@@ -1,0 +1,83 @@
+html{
+  cursor: url(../../../assets/hand.png), default;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Times New";
+  background: rgb(194, 201, 252);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.index .container{
+  margin: 20px;
+}
+
+h1, h2, h3 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+h1{
+  font-size: 40px; 
+}
+h2 {
+  top: -30px;
+  font-size: 30px;
+}
+#enter {
+  width: 50px;
+}
+button{
+  height: auto;
+  align-self: center;
+  margin: 5vw;
+  z-index: 1;
+  cursor: url(../../../assets/hand.png), default;
+}
+img {
+  height: 70vh;
+}
+.figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30vh;
+  z-index: 0;
+}
+.figcaption {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+}
+#figcapBino {
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+}
+#figcapCommon {
+  font-size: 18px;
+}
+#figcapType {
+  font-size: 18px;
+  text-transform: lowercase;
+}
+#btnNext{
+  display: none;
+  position: absolute;
+  right:0;
+  bottom:0;
+  margin: 40px;
+}
