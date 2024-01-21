@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title> IMCA RAYDEEOH! </title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet-player.css">
+<script src="lib/xlsx.full.min.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/ux.js"></script>
+<script type="text/javascript" src="js/schedule.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+</head>
+<body class="body-schedule" onload="startTime()">
+
+<header class="header-schedule">
+<h1>schedule</h1>
+<a id="return-button" href="/">⤶</a>
+<img id="header-icon" src="assets/icons/schedule_full.svg" alt="schedule icon">
+</header>
+
+<div class="section-schedule">
+  <div class="section-button">
+    <div class="button-tab">
+      <button class="schedule-button" id="monday-button" onclick="monday()">monday</button>
+      <button class="schedule-button" id="tuesday-button" onclick="tuesday()">tuesday</button>
+      <button class="schedule-button" id="wednesday-button" onclick="wednesday()">wednesday</button>
+      <button class="schedule-button" id="thursday-button" onclick="thursday()">thursday</button>
+      <button class="schedule-button" id="friday-button" onclick="friday()">friday</button>
+    </div>
+    <div class="button-tab" id="mobile">
+      <button class="schedule-button" id="monday-button" onclick="monday()">m</button>
+      <button class="schedule-button" id="tuesday-button" onclick="tuesday()">t</button>
+      <button class="schedule-button" id="wednesday-button" onclick="wednesday()">w</button>
+      <button class="schedule-button" id="thursday-button" onclick="thursday()">T</button>
+      <button class="schedule-button" id="friday-button" onclick="friday()">f</button>
+    </div>
+    
+  </div>
+<table class="schedule" id="monday-list">
+  <tbody>
+  <tr>
+  <th>1 PM</th>
+  <td class="show-name" id="row-full" colspan="3"><span>~~~</span> randomized sound pieces <span>~~~</span></td>
+  </tr>
+  <tr>
+  <th>2 PM</th>
+  <td class="show-name">DIRTY STINKY SMELLY</td>
+  <td class="host-name">PWUPPY PWINCESS</td>
+  <td class="show-description">Within a matter of seconds, my pitch shifted voice flangs into what feels like 'Search History' you thought you had cleared, we descend into the seductive, the surreal, the "DIRTY STINKY SMELLY". It is a variety show lathered with provocations – cleaning up all that nasty noise by dumping its proverbial garbage basket all over your desk and lighting it on fire. Think reality television play-by-plays shows, 5 gum, DIY night-core, sexy whistling, clock-ticking, clown costumes... It is a show that places horrible content right beneath our noses in the form of experimental sound, "trash" pop-culture indulgence and live prop-comedy performance.</td>
+  </tr>
+  <tr>
+  <th>3 PM</th>
+  <td class="show-name">Boioioing!</td>
+  <td class="host-name">Ale(OS)</td>
+  <td class="show-description">Boioioing! is a live performance of playful, experimental dance music.</td>
+  <tr>
+  <th>4 PM</th>
+  <td class="show-name">F*k*ng_De$troyed_4ever</td>
+  <td class="host-name">mc.pale</td>
+  <td class="show-description">Two extra-terrestrial humanoïd-cyborgs are listening to their local Top 40 Hits radio in their flying dark matter plasma bubble; this is what they hear. Punching DVDs, dropping a VHS from the top of a hill, drilling a hole in a USB key. Slowly inserting a needle in one's ear. Continuous sounds evolving for an hour. xD hihi you're not ready for this</td>
+  </tr>
+  <tr>
+  <th>5 PM</th>
+  <td class="show-name">Postamateur</td>
+  <td class="host-name">Louis Felix</td>
+  <td class="show-description">A weekly exploration of various topics, themes taken from the news, advertisement, pop culture, student gossip, politics and many more areas not yet mentioned. This show will likely last roughly an hour per episode and the contents will vary from interviews to conversations, random field recordings, music, silence, etc.</td>
+  </tr>
+  </tbody>
+  </table>
+  <footer></footer>
+</div>
+	<!-- PLAYER -->
+	<div class="player-main">
+		<a href="javascript:void(0)" onclick="window.open('player.html','newWin','resizable=no,width=440,height=400')">
+			<input type="image" src="assets/icons/audio_player/play.svg"></a>
+			<p id="player-text"></p>
+			<div id="clock"></div>
+		</div>
+
+</body>
+</html>
