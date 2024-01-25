@@ -210,7 +210,7 @@ $(document).ready(function () {
   <tr>
     <td class="p-type"><span title="coordination/personal project">⋰</span></td>
     <td class="p-title" id="n-16"><span class="p-popup">2024 calendar</span></td>
-    <td class="p-link"><a href="https://www.zeffy.com/en-CA/ticketing/1a000fe8-ca5e-4ba8-a017-41dfe82478a1"  target="_blank">⭷</a></td>
+    <td class="p-link"><a href="../doc/CALENDAR2024_en-fr.pdf"  target="_blank">⭷</a></td>
     <td class="p-year">2023</td>
     <td class="p-medium">print</td>
     <td class="p-role">project management + content curation + graphic design</td>
