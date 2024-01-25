@@ -26,6 +26,10 @@ body {
     overflow-y: hidden;
 }
 
+ /* .content-mobile {
+        display: none;
+    } */
+
 .column {
     height: 95%;
     box-sizing: border-box;
@@ -243,7 +247,6 @@ table a::selection {
     color: #ffffff;
 }
 
-/* 
 @media screen and (max-width: 800px) and (max-height: 600px) {
     body {
         display: flex;
@@ -258,7 +261,7 @@ table a::selection {
         display: none;
     }
 
-    #lang {
-        display: none;
-    }
-} */
+    /* .content-mobile {
+        display: block;
+    } */
+}
