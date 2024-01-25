@@ -1,0 +1,255 @@
+{
+    "Projects": [
+        {
+            "ID": "1",
+            "Title": "EGG",
+            "Medium": "Web",
+            "Link": "https://sbordel.github.io/EGG/",
+            "Type": "‧ personal project",
+            "Date": "2023",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "This website stores (most of) the recipes I use on a weekly basis. I created this to avoid scrolling 8 page-long introductory stories and overcrowding ads on recipe websites.",
+                "Prompt": "",
+                "Spec": "HTML/CSS + Javascript + JSON"
+            }
+        },
+        {
+            "ID": "2",
+            "Title": "sunday sites",
+            "Medium": "Web",
+            "Link": "../sunday-sites/index.html",
+            "Type": "‧ personal project",
+            "Date": "2022-2023",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "This website serves as my user page for Sunday Sites, a monthly gathering where people meet online to create a site guided by a prompt.",
+                "Prompt": "",
+                "Spec": "HTML/CSS"
+            }
+        },
+        {
+            "ID": "3",
+            "Title": "session #30",
+            "Medium": "Web",
+            "Link": "../sunday-sites/site02.html",
+            "Type": "‧ personal project",
+            "Date": "2023",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "A collection of knick-knacks.",
+                "Prompt": "The prompt for this session was 'Make a site inspired by a memory'",
+                "Spec": "HTML/CSS"
+            }
+        },
+        {
+            "ID": "4",
+            "Title": "session #26",
+            "Medium": "Web",
+            "Link": "../sunday-sites/site01.html",
+            "Type": "‧ personal project",
+            "Date": "2022",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "An homage to link rot, with a collection of various orphaned, broken or dead links.",
+                "Prompt": "The prompt for this session was 'Ephemerality'",
+                "Spec": "HTML/CSS"
+            }
+        },
+        {
+            "ID": "5",
+            "Title": "banshee",
+            "Medium": "Web",
+            "Link": "https://bansheenight.club/",
+            "Type": "⁝ commission project",
+            "Date": "2022",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "Promotional website for a local halloween event.",
+                "Prompt": "",
+                "Spec": "HTML/CSS + Javascript"
+            }
+        },
+        {
+            "ID": "6",
+            "Title": "mini websites",
+            "Medium": "Web",
+            "Link": "../misc-websites/entry.html",
+            "Type": "∶ school project",
+            "Date": "2020-2022",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "Single use websites created in the context of online groups sessions or for school assignments.",
+                "Prompt": "",
+                "Spec": "HTML/CSS + Javascript + misc"
+            }
+        },
+        {
+            "ID": "7",
+            "Title": "friends only",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/friends-only/index.html",
+            "Type": "∶ school project",
+            "Date": "2021",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "An anonymous blog with redacted text and secret images.",
+                "Prompt": "The goal of the exercise was to create a webpage were some censored text disappears and reveals itself over time; Based on this <a href='https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery/raving-redactionist'>code</a>.",
+                "Spec": "HTML/CSS + Javascript (jQuery)"
+            }
+        },
+        {
+            "ID": "8",
+            "Title": "fruit salad",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/fruit-salad/index.html",
+            "Type": "∶ school project",
+            "Date": "2021",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "A glass fruit salad puzzle game. ",
+                "Prompt": "The goal of the exercise was to create a puzzle game that uses jQuery UI drag/drop events; Based on this <a href='https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery-ui/code-taker/'>code</a>.",
+                "Spec": "HTML/CSS + Javascript (jQuery UI)"
+            }
+        },
+        {
+            "ID": "9",
+            "Title": "haiku best gill",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/haiku-best-gill/index.html",
+            "Type": "∶ school project",
+            "Date": "2021",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "A haiku generator in tribute to axolotols. ",
+                "Prompt": "The goal of the exercise was to create a webpage that displays a haiku where each line is chosen at random from a set of options; Based on this <a href='https://github.com/pippinbarr/cart263-2021/tree/main/examples/the-web-page/haiku-generator/'>code</a>.",
+                "Spec": "HTML/CSS + Javascript"
+            }
+        },
+        {
+            "ID": "10",
+            "Title": "is it edible or toxic?",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/fungi/index.html",
+            "Type": "∶ school project",
+            "Date": "2021",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "A picture-based game to identify the toxic nature of mushrooms.",
+                "Prompt": "The goal of the exercise was to create a webpage that exploits a voice API; Based on this <a href='https://github.com/pippinbarr/cart263-2021/tree/main/examples/voices/slamina/'>code</a>.",
+                "Spec": "HTML/CSS + Javascript (jQuery + ReponsiveVoice.js)"
+            }
+        },
+        {
+            "ID": "11",
+            "Title": "mood",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/mood/index.html",
+            "Type": "∶ school project",
+            "Date": "2022",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "A form to guess your mood on this day.",
+                "Prompt": "The goal of the exercise was to make an HTML form based on data collected over 4 days of daily activities or behaviour (that could have multiple attribute). Model the data as a JSON objects, and use jQuery to retrieve the data.",
+                "Spec": "HTML/CSS + Javascript (jQuery)"
+            }
+        },
+        {
+            "ID": "12",
+            "Title": "pizza palooza",
+            "Medium": "Web",
+            "Link": "https://hybrid.concordia.ca/s_bordel/exercises/exercise_03/exercise_e3.php",
+            "Type": "∶ school project",
+            "Date": "2022",
+            "Work": "graphic design +  front-end development",
+            "Description": {
+                "Brief": "A simple pizza ordering chat bot for a fictive company, with a history of past orders.",
+                "Prompt": "The goal of the exercise was to create an interactive collective interface whereby a user can complete a task. The results of their task are saved to a file on the server, which will remain on the website upon reloading the page or different client connects.",
+                "Spec": "HTML/CSS + Javascript (jQuery + AJAX) + PHP"
+            }
+        },
+        {
+            "ID": "13",
+            "Title": "sonny-jim",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/sonny-jim/index.html",
+            "Type": "∶ school project",
+            "Date": "2021",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "This website is a reinterpretation of David Lynch's infamous short-length movie titled Pierre and Sonny Jim (2001). This interactive piece is a reenactment of — and with no further development — the only scene of this movie, staging two latex glove-shaped balloons screaming at each other.",
+                "Prompt": "The goal of the exercise was to create a web project inspired by a film of your choice.",
+                "Spec": "HTML/CSS + Javascript (p5.js + Three.js)"
+            }
+        },
+        {
+            "ID": "14",
+            "Title": "where’s mister rabbit ?",
+            "Medium": "Web",
+            "Link": "../misc-websites/projects/mister-rabbit/index.html",
+            "Type": "⋰  coordination project",
+            "Date": "2021",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "A simple game of I spy, where you need to find Mister Rabbit.",
+                "Prompt": "The goal of the exercise was to create a hidden object game using p5.js; Based on this <a href='https://github.com/pippinbarr/cart263-2021/tree/main/examples/p5js/wheres-sausage-dog/'>code</a>",
+                "Spec": "HTML/CSS + Javascript (p5.js)"
+            }
+        },
+        {
+            "ID": "15",
+            "Title": "imca raydeeoh",
+            "Medium": "Web",
+            "Link": "../imca-raydeeoh/index.html",
+            "Type": "⁖ collaboration project",
+            "Date": "2019 & 2023",
+            "Work": "graphic design + front-end development",
+            "Description": {
+                "Brief": "IMCA RAYDEEOH was an experimental web radio founded by Intermedia students at Concordia University, located on unceded Kanien'kehá:ka territory.<br><br>Note: This website was originally created by myself (front-end) and Matthew Halpenny (back-end) in 2019. We we're both still new to coding at the time (my code was absolute spaghetti) so I've decided to redo the front-end from the original mock-ups for the sake of this portfolio. You can find the complete original project archived <a href='https://github.com/sbordel/imca-raydeeoh'>here</a>.",
+                "Prompt": "",
+                "Spec": "HTML/CSS"
+            }
+        },
+        {
+            "ID": "16",
+            "Title": "fundraising calendar",
+            "Medium": "Print",
+            "Link": "https://www.zeffy.com/en-CA/ticketing/1a000fe8-ca5e-4ba8-a017-41dfe82478a1",
+            "Type": "⋰  coordination project",
+            "Date": "2024",
+            "Work": "project management & coordination + content curation + graphic design",
+            "Description": {
+                "Brief": "A calendar featuring artworks from 12 local artists around the theme \"saccharine\" to raise money for the <a>Indigenous Support Work Project (ISWP)</a>.The calendar is translated into French, English, and in Nunavimmiutitut (ᓄᓇᕕᒻᒥᐅᑎᑐᑦ), \nacknowledging the overrepresentation of Inuit people within the unhoused indigenous community of Tiohti:áke/Montreal.<br><br>Conception + Design: Sam Bordeleau<br><br>Artworks: Juliette Dupont-Duchesne, Arta Ajeti, Elena, Hannah Louisy, Riss Sean Cruz, Katherine DM, Catherine Desroches, Francis Marcelle, Darcy Roop, Tito Rocha, Aya Danzig & 3nvelope<br><br>Riso printed at NoGloss",                "Prompt": "",
+                "Spec": ""
+            }
+        },
+        {
+            "ID": "17",
+            "Title": "fundraising calendar",
+            "Medium": "Print",
+            "Link": "#",
+            "Type": "⋰  coordination project",
+            "Date": "2023",
+            "Work": "project management & coordination + content curation + graphic design",
+            "Description": {
+                "Brief": "A calendar featuring artworks from various local artists that aesthetically evoke the sentiment of comfort and coziness to raise money for The Open Door, a drop-in center providing services to homeless and low-income people in downtown Montreal.<br><br>Conception + Design: Samuelle Bordeleau<br><br>Artworks by 3nvelope, Eli Del, Darcy Roop, Elena, Hannah Louisy, Hayley Mortin, Jules Galbraith, Kai CM, Riss Sean Cruz, Negar Nakhai, Océane Buxton, Scott Fleming-Little and Tito Rocha",
+                "Prompt": "",
+                "Spec": ""
+            }
+        },
+        {
+            "ID": "18",
+            "Title": "weepy daisy",
+            "Medium": "3D",
+            "Link": "https://drive.google.com/file/d/1YEQCAgzelUNUEY6Hwrysi57_enk6kSy-/view?usp=sharing",
+            "Type": "‧ personal / ⁖ collaboration project",
+            "Date": "2021",
+            "Work": "3D modelling + armature animation",
+            "Description": {
+                "Brief": "Weepy Daisy is a humanoïd flower that I designed and modelled in Blender.",
+                "Prompt": "My friends at Audio Bambino showcased this character in a promo video where he dances to 'Blood Problemz' by accounta, a track released on their compilation <a href='https://audiobambino.bandcamp.com/album/bam-005-2'>BAM-005</a>.",
+                "Spec": ""
+            }
+        }
+    ]
+}
