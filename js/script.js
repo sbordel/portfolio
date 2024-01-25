@@ -113,17 +113,17 @@ $(document).ready(function () {
   </tr>
   <tr>
     <td class="p-type"><span title="personal project">‧</span></td>
-    <td class="p-title" id="n-3"><span class="p-popup">ephemerality (#26)</span></td>
+    <td class="p-title" id="n-3"><span class="p-popup">make a site inspired by a memory (#30)</span></td>
     <td class="p-link"><a href="../sunday-sites/site02.html" target="_blank">⭷</a></td>
-    <td class="p-year">2022</td>
+    <td class="p-year">2023</td>
     <td class="p-medium">web</td>
     <td class="p-role">graphic design + front end dev (HTML/CSS)</td>
   </tr>
   <tr>
     <td class="p-type"><span title="personal project">‧</span></td>
-    <td class="p-title" id="n-4"><span class="p-popup">make a site inspired by a memory (#30)</span></td>
+    <td class="p-title" id="n-4"><span class="p-popup">ephemerality (#26)</span></td>
     <td class="p-link"><a href="../sunday-sites/site01.html" target="_blank">⭷</a></td>
-    <td class="p-year">2023</td>
+    <td class="p-year">2022</td>
     <td class="p-medium">web</td>
     <td class="p-role">graphic design + front end dev (HTML/CSS)</td>
   </tr>
