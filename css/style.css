@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Unifont';
-  src: url('../fonts/Unifont/unifont-15.1.04.otf');
+    font-family: 'Unifont';
+    src: url('../fonts/Unifont/Unifont.woff2') format('woff2'),
+        url('../fonts/Unifont/Unifont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 html {
@@ -15,7 +19,7 @@ body {
     color: #1e1e1e;
     height: 100%;
     box-sizing: border-box;
-    font-family: Unifont;
+    font-family: 'Unifont';
     font-style: normal;
     padding: 0;
     margin: 10px;
