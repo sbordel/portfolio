@@ -1,3 +1,3 @@
 
-# ・゜゜・．ethylic froth's website [🔗](https://lobotomi-e.net/index.html)
+# ・゜゜・．sam's website [🔗](https://lobotomi-e.net/index.html)
 
