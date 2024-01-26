@@ -254,8 +254,8 @@ table a::selection {
     body {
         display: flex;
         justify-self: center;
-        width: default;
-        height: default;
+        width: auto;
+        height: auto;
         margin: 0;
     }
 

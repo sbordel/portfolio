@@ -10,16 +10,6 @@ html {
   background-size: cover;
   overflow: hidden;
 }
-@font-face {
-  font-family: 'Garamondt';
-  src: url(../../fonts/Garamondt/Garamondt-Italic.woff);
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Garamondt';
-  src: url(../../fonts/Garamondt/Garamondt-Regular.woff);
-  font-weight: normal;
-}
 /* ***
 MAIN PAGE
 *** */

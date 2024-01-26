@@ -70,17 +70,17 @@ $(document).ready(function () {
 
       let prjExt;
 
-      if (pageId <= 15) {
-        prjExt = ".jpg";
-      } else if (pageId == 16 || pageId == 17) {
-        prjExt = ".png";
-      } else if (pageId == 18) {
-        prjExt = ".gif";
-      } else {
-        prjExt = "";
-      }
-
       for (i = 0; i < 18; i++) {
+        if (pageId <= 15) {
+          prjExt = ".jpg";
+        } else if (pageId == 16 || pageId == 17) {
+          prjExt = ".png";
+        } else if (pageId == 18) {
+          prjExt = ".gif";
+        } else {
+          prjExt = ".jpg";
+        }
+
         imgArray[i] = new Image();
         imgArray[i].src = "assets/web-shots/screenshot-" + pageId + prjExt;
       }
@@ -89,7 +89,9 @@ $(document).ready(function () {
       $(pageTitle).text(prjData[objId].Title + " (" + prjData[objId].Date + ")");
       $(pageDscA).html(prjData[objId].Description.Brief);
       $(pageDscB).html(prjData[objId].Description.Prompt);
+      if ($(".content-body").css("display") == "none") {
       $(".content-body").show();
+      }
     })
   });
 
