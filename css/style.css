@@ -24,7 +24,7 @@ body {
     overflow-y: hidden;
 }
 
- .content-mobile {
+.content-mobile {
         display: none;
     }
 
@@ -155,6 +155,11 @@ h3 {
 h3 #title {
     text-transform: uppercase;
 }
+
+.nav-btn img{
+    width: 200px;
+}
+
 
 table {
     position: relative;
