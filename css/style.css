@@ -1,11 +1,9 @@
 @font-face {
     font-family: 'Unifont';
-    src: url('../fonts/Unifont/Unifont.woff2') format('woff2'),
-        url('../fonts/Unifont/Unifont.woff') format('woff');
+    src: url(../fonts/Unifont/unifont.otf);
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
-}
+  }
 
 html {
     width: 100%;
