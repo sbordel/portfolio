@@ -38,7 +38,7 @@
             "Work": "graphic design + front-end development",
             "Description": {
                 "Brief": "A collection of knick-knacks.",
-                "Prompt": "The prompt for this session was 'Make a site inspired by a memory'",
+                "Prompt": "The prompt for this session was 'Make a site inspired by a memory'.",
                 "Spec": "HTML/CSS"
             }
         },
@@ -52,7 +52,7 @@
             "Work": "graphic design + front-end development",
             "Description": {
                 "Brief": "An homage to link rot, with a collection of various orphaned, broken or dead links.",
-                "Prompt": "The prompt for this session was 'Ephemerality'",
+                "Prompt": "The prompt for this session was 'Ephemerality'.",
                 "Spec": "HTML/CSS"
             }
         },
