@@ -306,7 +306,7 @@ $(document).ready(function () {
     $(navLink).css({ 'color': '#000', 'background-color': 'transparent' });
     if ($(this).attr('id') == 'cv-btn') {
       $('a[href="#cv"]').css({ 'color': '#C3C4C9', 'background-color': '#000' })
-      window.open('../doc/CV-en-fr_2024.pdf');
+      window.open('../doc/CV-en.pdf');
     } else if ($(this).attr('id') == 'prj-btn') {
       navBody.innerHTML = prjContent;
     } else if ($(this).attr('id') == 'info-btn') {
