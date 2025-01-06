@@ -272,7 +272,7 @@ $(document).ready(function () {
 
     let prjW;
 
-    for (i = 0; i < 18; i++) {
+    for (i = 0; i < 19; i++) {
       if (pageId == 16 || pageId == 17) {
         prjW = "450";
       } else {
