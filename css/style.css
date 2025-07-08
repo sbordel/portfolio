@@ -290,7 +290,7 @@ details>summary::-webkit-details-marker {
     }
 }
 
-@media screen and (max-width: 600px) and (max-height: 600px) {
+@media screen and (max-width: 600px) and (max-height: 800px) {
     body {
         display: flex;
         width: 100%;
@@ -307,6 +307,11 @@ details>summary::-webkit-details-marker {
     .content-mobile {
         display: block;
         padding: 15px;
+    }
+
+    span{
+        display: flex;
+        justify-content: center;
     }
 
     h1 {
