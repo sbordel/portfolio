@@ -36,7 +36,7 @@ body {
 
 nav {
     top: 0px;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 2vh;
     line-height: 8px;
     z-index: 1;
@@ -156,14 +156,9 @@ a:hover {
     background-color: #000;
 }
 
-.nav-header img,
 .nav-header a[href="#projects"]:hover {
     color: transparent;
     background-color: transparent;
-}
-
-.nav-header img:hover {
-    filter: invert(100%);
 }
 
 h1,
