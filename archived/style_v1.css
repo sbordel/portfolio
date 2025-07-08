@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Unifont';
+    src: url(../fonts/Unifont/unifont.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #c0c1c6;
+    color: #1e1e1e;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Unifont';
+    font-style: normal;
+    padding: 0;
+    margin: 10px;
+    overflow-y: hidden;
+}
+
+.content-mobile {
+        display: none;
+    }
+
+.column {
+    /* height: 95%; */
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+
+nav {
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 2vh;
+    line-height: 8px;
+    z-index: 1;
+}
+
+#nav-body {
+    overflow-y: scroll;
+    height: 70vh;
+    box-sizing: border-box;
+    scrollbar-color: #c0c1c6 transparent;
+    scrollbar-width: thin;
+}
+
+.content-body {
+    position: absolute;
+    text-align: justify;
+    text-justify: inter-word;
+    display: none;
+    width: 650px;
+    /* width: 45vmax; */
+    height: auto;
+    padding: 15px;
+    border: 1px solid #0044e2;
+    background: #c0c1c6;
+    z-index: 3;
+}
+
+h3 #title,
+.content-info,  
+.content-descript {
+    color: #0044e2;
+}
+
+.content-info p {
+    margin: 0;
+}
+
+#content-img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    border: 0.5px #0044e2 solid;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+#nav-body::-webkit-scrollbar {
+    width: 0.7em;
+    background: #c0c1c6;
+}
+
+#nav-body::-webkit-scrollbar-track,
+#nav-body::-webkit-scrollbar-button,
+#nav-body::-webkit-scrollbar-corner {
+    background: transparent;
+    width: 0.7em;
+}
+
+#nav-body::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+a {
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #0044e2;
+}
+
+.content-body a {
+    color: #0044e2;
+}
+
+.p-popup:hover {
+    color: #C3C4C9;
+    background-color: #000;
+}
+
+.nav-header a {
+    color: #000;
+}
+
+.nav-header a:hover {
+    color: #C3C4C9;
+    background-color: #000;
+}
+
+.nav-header img,
+.nav-header a[href="#projects"]:hover {
+    color: transparent;
+    background-color: transparent;
+}
+
+.nav-header img:hover {
+    filter: invert(100%);
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px auto 0px auto;
+}
+
+h3 #title {
+    text-transform: uppercase;
+}
+
+.nav-btn img{
+    width: 200px;
+}
+
+
+table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#info table {
+    width: 15%;
+}
+
+tr,
+td {
+    border: 1px solid #0044e2;
+    /* border: 1px dotted #000000; */
+}
+
+td {
+    padding: 5px 7px 5px 7px;
+}
+
+.p-type {
+    width: 2%;
+    text-align: center;
+}
+
+#info.p-type {
+    width: 1%;
+}
+
+.p-title {
+    width: auto;
+}
+
+.p-year {
+    width: 10%;
+}
+
+.p-medium {
+    text-transform: uppercase;
+    width: 5%;
+}
+
+.p-role {
+    width: 50%;
+}
+
+.p-info {
+    width: 10%;
+}
+/* 
+.prj-focus {
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.prj-focus img {
+    width: 20%;
+    height: auto;
+    border: 1px #0044e2 solid;
+} */
+
+.p-title :active {
+    color: #C3C4C9;
+    background-color: #000;
+}
+
+.p-info a:hover {
+    color: #ffffff;
+    background-color: #0044e2;
+}
+
+td::selection {
+    background: #0044e2;
+    color: #ffffff;
+}
+
+span::selection {
+    background: #0044e2;
+    color: #ffffff;
+}
+
+table a::selection {
+    background: #0044e2;
+    color: #ffffff;
+}
+@media screen and (max-width: 800px){
+    .content-body {
+        width: 60vw;
+    }
+    #content-img {
+        display: none;
+    }
+    td.p-role{
+        display: none; 
+    }
+}
+@media screen and (max-width: 600px) and (max-height: 600px) {
+    body {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column {
+        display: none;
+    }
+
+    .content-mobile {
+        display: block;
+        padding: 15px;
+    }
+
+    h1{
+        text-align: center;
+     }
+}
